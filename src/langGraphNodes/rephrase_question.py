@@ -3,13 +3,13 @@ import os
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_core.prompts import PromptTemplate
 from src.mappings.company_stock_code_array import CompanyStockCodeArray
+from src.types.langgraph_state_types import OverallState
+from src.providers.chat_openAI_provider import chat_model
 
 
-def rephrase_question(user_input: str) -> str:
-    openAIApiKey = os.getenv("OPENAI_API_KEY")
+def rephrase_question(state: OverallState) -> OverallState:
 
-    custom_prompt = PromptTemplate(
-        template=f"""
+    custom_prompt = f"""
         你是一個專門將使用者問題重寫成完整查詢的助理，用於文件檢索。
         ### 指示：
         1. 讀取使用者的問題與對話歷史。
@@ -18,14 +18,10 @@ def rephrase_question(user_input: str) -> str:
         4. 僅輸出重寫後的問題，不要輸出多餘文字。
 
         ### 使用者問題：
-        {user_input}
+        {state['user_input']}
 
         ### 改寫後的問題："""
-    )
 
-    llm = ChatOpenAI(model_name="gpt-4o", openai_api_key=openAIApiKey, temperature=0.6)
+    rephrased_question = chat_model.invoke(custom_prompt)
 
-    rephrased_question = llm.invoke(custom_prompt)
-    print("轉化後的問題:==========", rephrased_question.content)
-
-    return rephrased_question
+    return {**state, "rephrased_question": rephrased_question}

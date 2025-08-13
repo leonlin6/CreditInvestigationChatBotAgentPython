@@ -141,7 +141,6 @@ embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
 async def establish_vector_data():
     vectorStrArray = []
     pdf_files = get_pdf_files()
-    print("before for pdf======")
 
     # 讀取本地 JSON 檔案（假設檔名為 data.json）
     with open("./src/services/parsedData.json", "r", encoding="utf-8") as f:

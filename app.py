@@ -6,31 +6,40 @@ import chromadb
 from typing import List, Dict, Optional
 from fastapi import FastAPI
 from dotenv import load_dotenv
+from src.services.save_document_into_vectordb_service import establish_vector_data
+from pydantic import BaseModel, Field
+from src.mappings.company_stock_code_array import CompanyStockCodeArray
+
+# import LangChain lib
+from langchain.retrievers import RePhraseQueryRetriever
+from langchain.chains import LLMChain
+from langchain_community.utilities import SQLDatabase
 from langchain_chroma import Chroma
 from langchain_openai import OpenAIEmbeddings, ChatOpenAI
 from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import PromptTemplate
-from src.services.save_document_into_vectordb_service import establish_vector_data
-from dotenv import load_dotenv
-from pydantic import BaseModel, Field
-from src.mappings.company_stock_code_array import CompanyStockCodeArray
-from langchain.retrievers import RePhraseQueryRetriever
-from langchain.chains import LLMChain
-from langchain_community.utilities import SQLDatabase
+from langchain.schema.output_parser import StrOutputParser
+
+# import LangGraph lib
 from langgraph.graph import StateGraph, START, END
 from langgraph.graph import MessagesState
-from langchain.schema.output_parser import StrOutputParser
+from typing_extensions import TypedDict, NotRequired, Annotated
+
+# import langGraph nodes
 from src.langGraphNodes.rephrase_question import rephrase_question
+from src.langGraphNodes.classify_is_question_in_range import (
+    classify_is_question_in_range,
+)
 from src.langGraphNodes.classify_statement_type import classify_statement_type
 from src.langGraphNodes.exact_query import exact_query
+from src.langGraphNodes.semantic_retrieval import semantic_retrieval
+from src.langGraphNodes.classify_question_type import classify_question_type
 
+# import type
+from src.types.langgraph_state_types import OverallState
 
 # Load environment variables
 load_dotenv()
-
-openAIApiKey = os.getenv("OPENAI_API_KEY")
-print("openAIApiKey=====", openAIApiKey)
-chatModel = ChatOpenAI(model_name="gpt-4o", openai_api_key=openAIApiKey)
 
 app = FastAPI()
 
@@ -38,51 +47,74 @@ client = chromadb.HttpClient(host="localhost", port=8000)
 embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
 
 
-# langGraph Node:將question提供給LLM進行分析，判斷是「語意檢索」or「精確查詢」
-def classifyQuestionType(state: MessagesState):
-    classifyQuestionTypePrompt = f"""
-    ###指示：
-        你是一個分類器。請判斷以下問題的類型：
-    ###規則：
-        如果問題需要查詢特定欄位、數值或主鍵，請回答「精確查詢」。
-        如果問題需要語意相似度匹配或比較，請回答「語意檢索」。
-        不要解釋過程，只需回答「語意檢索」或「精確查詢」。
-    ###問題: ${state['messages']}"""
-
-    res = chatModel.invoke(classifyQuestionTypePrompt)
-    type = res.content
-
-    return {**state, "type": type}
+def question_type_condition_edge(state: OverallState) -> str:
+    match state["question_type"]:
+        case "語意檢索":
+            return "semantic_retrieval"
+        case "精確查詢":
+            return "exact_query"
+        case _:
+            return "semantic_retrieval"
 
 
-# langGraph Node:判斷是「語意檢索」，所以後續丟給Agent繼續執行回覆答案
-def semantic_retrieval(state: MessagesState):
-    classifyQuestionTypePrompt = f"""
-    ###指示：
-        你是一個分類器。請判斷以下問題的類型：
-    ###規則：
-        如果問題需要查詢特定欄位、數值或主鍵，請回答「精確查詢」。
-        如果問題需要語意相似度匹配或比較，請回答「語意檢索」。
-        不要解釋過程，只需回答「語意檢索」或「精確查詢」。
-    ###問題: ${state['messages']}"""
+# 若問題超出範圍，則回END
+# 若沒超出範圍，則進入下一個Node：classify_question_type
+def is_question_in_range_edge(state: OverallState) -> str:
+    try:
+        print("is_question_in_range_edge in========", state["is_question_in_range"])
+        match state["is_question_in_range"]:
+            case "True":
+                return "classify_question_type"
+            case "False":
+                return "question_out_of_range"
+            case _:
+                return "END"
+    except (ValueError, TypeError) as e:
+        print(f"發生錯誤: {e}")
 
-    res = chatModel.invoke(classifyQuestionTypePrompt)
-    type = res.content
 
-    return {**state, "type": type}
+def question_out_of_range(state: OverallState) -> OverallState:
+    return {
+        **state,
+        "answer": "您的問題已超出我可回覆的範圍(財務報表相關資訊)，請重新提問。",
+    }
 
 
 # 宣告Graph Workflow
-workflow = StateGraph(MessagesState)
-# 宣告LangGraph Ndoe and Edge
-workflow.add_node(classifyQuestionType)
+workflow = StateGraph(OverallState)
+# 宣告LangGraph Ndoe
 workflow.add_node(rephrase_question)
+workflow.add_node(classify_is_question_in_range)
+
+workflow.add_node(classify_question_type)
 workflow.add_node(classify_statement_type)
 workflow.add_node(exact_query)
 workflow.add_node(semantic_retrieval)
+workflow.add_node(question_out_of_range)
 
-workflow.add_edge(START, "classify_statement_type")
-workflow.add_edge("classify_statement_type", END)
+# 宣告LangGraph Edge
+workflow.add_edge(START, "rephrase_question")
+workflow.add_edge("rephrase_question", "classify_is_question_in_range")
+workflow.add_conditional_edges(
+    source="classify_is_question_in_range",  # 判定問題是否涵蓋在「財務報表」類型的問題
+    path=is_question_in_range_edge,
+    path_map={  # 路徑映射
+        "classify_question_type": "classify_question_type",
+        "question_out_of_range": "question_out_of_range",
+    },
+)
+workflow.add_edge("question_out_of_range", END)
+
+workflow.add_conditional_edges(
+    source="classify_question_type",  # 來源節點
+    path=question_type_condition_edge,  # 決定要走哪個路的函式
+    path_map={  # 路徑映射
+        "semantic_retrieval": "semantic_retrieval",
+        "exact_query": "exact_query",
+    },
+)
+workflow.add_edge("exact_query", END)
+workflow.add_edge("semantic_retrieval", END)
 
 # workflow.add_edge("classifyQuestionType", "rephrase_question")
 # workflow.add_edge("rephrase_question", "classify_statement_type")
@@ -163,127 +195,13 @@ parser = JsonOutputParser(pydantic_object=QuestionSchema)
 
 # Terminal chat mode
 async def terminal_chat():
-    print("AI Chatbot (type 'exit' or 'quit' to leave)")
     while True:
         user_input = input("You: ")
         if user_input.lower() in ("exit", "quit"):
             break
         try:
-            graph.invoke({"user_input": user_input})
-            # Define your desired data structure.
-            # 目的是要組出結構化的schema，在filter的時候可以放入指定的schema參數
-            prompt = PromptTemplate(
-                template="""盡可能回覆問題，並組成指定的格式，無法取得資訊的欄位，填入空字串作為其value。
-                    companyName一定要從問題中取出文字代入。
-                    問題：{question}\n
-                    格式：{format_instructions}""",
-            )
-
-            chain = prompt | chatModel | parser
-            schema = chain.invoke(
-                {
-                    "question": user_input,
-                    "format_instructions": parser.get_format_instructions(),
-                }
-            )
-            print("schema ======", schema)
-
-            # 判斷 companyCode、companyName、shortName、englishName 是否有值
-            company_identifiers = [
-                schema["companyCode"],
-                schema["companyName"],
-                schema["shortName"],
-                schema["englishName"],
-            ]
-
-            found_company = None
-
-            for index, identifier in enumerate(company_identifiers):
-                if identifier:
-                    if index == 0:
-                        found_company = get_company_by_code(identifier)
-                    else:
-                        # 先用完整名稱或簡稱比對
-                        found_company = get_company_by_name(identifier)
-
-                        # 如果沒有找到，改用包含關鍵字模糊比對
-                        if found_company is None:
-                            matches = [
-                                item
-                                for item in CompanyStockCodeArray
-                                if any(
-                                    isinstance(value, str) and identifier in value
-                                    for value in item.values()
-                                )
-                            ]
-                            found_company = matches[0] if matches else None
-
-                # 如果找到公司，就更新 sqlschema 並停止迴圈
-                if found_company:
-                    schema["companyName"] = found_company["companyName"]
-                    schema["companyCode"] = found_company["companyCode"]
-                    schema["shortName"] = found_company["shortName"]
-                    schema["englishName"] = found_company["englishName"]
-                    break
-
-            print("找到公司:", found_company)
-            print("更新後的 schema:", schema)
-
-            schema_company_name = schema.get("companyName")
-            schema_year = schema.get("period", {}).get("year")
-            schema_quarter = schema.get("period", {}).get("quarter")
-
-            field = schema.get("requested_fields", [])
-
-            print("更新後的 company_name:", schema_company_name)
-            print("更新後的 schema_year:", schema_year)
-            print("更新後的 schema_quarter:", schema_quarter)
-            print("更新後的 field", field)
-
-            results = vector_store.similarity_search_with_score(
-                query=f"請問{field}的代碼是多少？",
-                k=5,
-                # filter={
-                #     "$and": [
-                #         {"companyName": {"$eq": schema_company_name}},
-                #         {"year": {"$eq": schema_year}},
-                #         {"quarter": {"$in": [schema_quarter]}},
-                #     ]
-                # },
-            )
-            print("results:======", results)
-
-            mergeAnswerPrompt = f"""
-                你是一個專業的信用徵審團隊助手，並根據'參考答案'給出最接近問題的會計代碼(account title)
-                只要回答會計代碼(account title)就好，不用說明太多
-                ###問題：{user_input}
-                ###參考答案：{results}
-            """
-
-            answer = chatModel.invoke(mergeAnswerPrompt)
-            print("answer:======", answer.content)
-
-            answerValue = db.run(
-                f"SELECT value FROM balance_sheet WHERE company_code={schema['companyCode']} AND year={schema['period']['year']} AND quarter={schema['period']['quarter']} AND account_title_code={answer.content};"
-            )
-            print("answerData:======", answerValue)
-            answerUnit = db.run(
-                f"SELECT unit FROM balance_sheet WHERE company_code={schema['companyCode']} AND year={schema['period']['year']} AND quarter={schema['period']['quarter']} AND account_title_code={answer.content};"
-            )
-            print("answerData:======", answerValue)
-            answerData = {"value": answerValue, "unit": answerUnit}
-            finalPrompt = f"""
-                你是一個專業的信用徵審團隊助手，並根據'參考答案'回答問題
-                ###問題：{user_input}
-                ###參考答案：{answerData}
-            """
-
-            finalAnswer = chatModel.invoke(finalPrompt)
-            print("\n")
-            print("\n")
-
-            print("finalAnswer:======", finalAnswer.content)
-
+            graph_answer = graph.invoke({"user_input": user_input})
+            print("The answer is :", graph_answer["answer"])
         except Exception as err:
             print("Error:", err, file=sys.stderr)
 
