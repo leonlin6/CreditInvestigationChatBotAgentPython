@@ -14,7 +14,6 @@ from src.providers.chat_openAI_provider import chat_model
 
 
 def exact_query(state: OverallState) -> OverallState:
-
     # 定義撈資料的DB
     db = SQLDatabase.from_uri("sqlite:///FinancialStatements.db")
     embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
@@ -64,6 +63,16 @@ def exact_query(state: OverallState) -> OverallState:
     code_to_company_map = {}
     name_to_company_map = {}
 
+    # 建立查找字典
+    for item in CompanyStockCodeArray:
+        # 用 companyCode 取得公司資料
+        code_to_company_map[item["companyCode"]] = item
+
+        # 用不同名稱取得公司資料
+        name_to_company_map[item["companyName"]] = item
+        name_to_company_map[item["shortName"]] = item
+        name_to_company_map[item["englishName"]] = item
+
     # 根據 companyCode 查找公司
     def get_company_by_code(code: str):
         return code_to_company_map.get(code, None)
@@ -89,6 +98,7 @@ def exact_query(state: OverallState) -> OverallState:
             "format_instructions": parser.get_format_instructions(),
         }
     )
+    print("\nschemae ========\n", schema)
 
     # 判斷 companyCode、companyName、shortName、englishName 是否有值
     company_identifiers = [
@@ -108,17 +118,19 @@ def exact_query(state: OverallState) -> OverallState:
                 # 先用完整名稱或簡稱比對
                 found_company = get_company_by_name(identifier)
 
-                # 如果沒有找到，改用包含關鍵字模糊比對
-                if found_company is None:
-                    matches = [
-                        item
-                        for item in CompanyStockCodeArray
-                        if any(
-                            isinstance(value, str) and identifier in value
-                            for value in item.values()
-                        )
-                    ]
-                    found_company = matches[0] if matches else None
+            # 如果沒有找到，改用包含關鍵字模糊比對
+            if found_company is None:
+                matches = [
+                    item
+                    for item in CompanyStockCodeArray
+                    if any(
+                        isinstance(value, str) and identifier in value
+                        for value in item.values()
+                    )
+                ]
+                found_company = matches[0] if matches else None
+
+        print("\nbefore  if found_company:======\n", found_company)
 
         # 如果找到公司，就更新 sqlschema 並停止迴圈
         if found_company:
@@ -132,45 +144,49 @@ def exact_query(state: OverallState) -> OverallState:
         schema_year = schema.get("period", {}).get("year")
         schema_quarter = schema.get("period", {}).get("quarter")
 
-        field = schema.get("requested_fields", [])
+    field = schema.get("requested_fields", [])
+    print("=====field", field)
+    results = vector_store.similarity_search_with_score(
+        query=f"請問{field}的代碼是多少？",
+        k=5,
+        # filter={
+        #     "$and": [
+        #         {"companyName": {"$eq": schema_company_name}},
+        #         {"year": {"$eq": schema_year}},
+        #         {"quarter": {"$in": [schema_quarter]}},
+        #     ]
+        # },
+    )
 
-        results = vector_store.similarity_search_with_score(
-            query=f"請問{field}的代碼是多少？",
-            k=5,
-            # filter={
-            #     "$and": [
-            #         {"companyName": {"$eq": schema_company_name}},
-            #         {"year": {"$eq": schema_year}},
-            #         {"quarter": {"$in": [schema_quarter]}},
-            #     ]
-            # },
-        )
+    get_account_title_prompt = f"""
+        你是一個專業的信用徵審團隊助手，並根據'參考答案'給出最接近問題的會計代碼(account title code)
+        只要回答會計代碼(account title code)就好，不用說明太多
+        ###問題：{state['user_input']}
+        ###參考答案：{results}
+    """
 
-        mergeAnswerPrompt = f"""
-            你是一個專業的信用徵審團隊助手，並根據'參考答案'給出最接近問題的會計代碼(account title)
-            只要回答會計代碼(account title)就好，不用說明太多
-            ###問題：{state['user_input']}
-            ###參考答案：{results}
-        """
+    response_get_account_title = chat_model.invoke(get_account_title_prompt)
+    account_title_code = response_get_account_title.content
+    print("\n schema====", schema)
+    print("\n state====", state)
+    print("\n account_title_code====", account_title_code)
+    answerValue = db.run(
+        f"SELECT value FROM {state['statement_type']} WHERE company_code='{schema['companyCode']}' AND year={schema['period']['year']} AND quarter={schema['period']['quarter']} AND account_title_code='{account_title_code}';"
+    )
+    answerUnit = db.run(
+        f"SELECT unit FROM {state['statement_type']} WHERE company_code='{schema['companyCode']}' AND year={schema['period']['year']} AND quarter={schema['period']['quarter']} AND account_title_code='{account_title_code}';"
+    )
+    answerData = {"value": answerValue, "unit": answerUnit}
+    print("\n Answer Data-----------", answerData)
 
-        answer = chat_model.invoke(mergeAnswerPrompt)
+    finalPrompt = f"""
+        你是一個專業的信用徵審團隊助手，並根據'參考答案'回答問題
+        若答案為數字，則根據千位加入標點符號，並不要更改其正負號
+        ###問題：{state['user_input']}
+        ###參考答案：{answerData}
+    """
 
-        answerValue = db.run(
-            f"SELECT value FROM balance_sheet WHERE company_code='{schema['companyCode']}' AND year={schema['period']['year']} AND quarter={schema['period']['quarter']} AND account_title_code='{answer.content}';"
-        )
-        answerUnit = db.run(
-            f"SELECT unit FROM balance_sheet WHERE company_code='{schema['companyCode']}' AND year={schema['period']['year']} AND quarter={schema['period']['quarter']} AND account_title_code='{answer.content}';"
-        )
-        answerData = {"value": answerValue, "unit": answerUnit}
+    res = chat_model.invoke(finalPrompt)
+    final_answer = res.content
 
-        finalPrompt = f"""
-            你是一個專業的信用徵審團隊助手，並根據'參考答案'回答問題
-            若答案為數字，則根據千位加入標點符號
-            ###問題：{state['user_input']}
-            ###參考答案：{answerData}
-        """
-
-        res = chat_model.invoke(finalPrompt)
-        answer = res.content
-
-        return {**state, "answer": answer}
+    return {**state, "answer": final_answer}

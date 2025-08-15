@@ -1,18 +1,13 @@
-import os
-import chromadb
-import getpass
-
-
-from langchain_anthropic import ChatAnthropic
 from langgraph.prebuilt import create_react_agent
-from src.providers.chat_openAI_provider import chat_model
 from src.types.langgraph_state_types import OverallState
 from langchain_core.messages import AIMessage
+from langchain_core.tools import tool
 
 
 def semantic_retrieval(state: OverallState) -> OverallState:
     print("semantic_retrieval in =======")
 
+    @tool
     def get_weather(city: str) -> str:
         """Get weather for a given city."""
         print("use the get weather tool=====================")

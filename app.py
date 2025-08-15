@@ -52,7 +52,7 @@ def question_type_condition_edge(state: OverallState) -> str:
         case "語意檢索":
             return "semantic_retrieval"
         case "精確查詢":
-            return "exact_query"
+            return "classify_statement_type"
         case _:
             return "semantic_retrieval"
 
@@ -85,7 +85,6 @@ workflow = StateGraph(OverallState)
 # 宣告LangGraph Ndoe
 workflow.add_node(rephrase_question)
 workflow.add_node(classify_is_question_in_range)
-
 workflow.add_node(classify_question_type)
 workflow.add_node(classify_statement_type)
 workflow.add_node(exact_query)
@@ -106,13 +105,15 @@ workflow.add_conditional_edges(
 workflow.add_edge("question_out_of_range", END)
 
 workflow.add_conditional_edges(
-    source="classify_question_type",  # 來源節點
+    source="classify_question_type",  # 判定問題是「語意檢索」or「精確查詢」
     path=question_type_condition_edge,  # 決定要走哪個路的函式
     path_map={  # 路徑映射
         "semantic_retrieval": "semantic_retrieval",
-        "exact_query": "exact_query",
+        "classify_statement_type": "classify_statement_type",
     },
 )
+workflow.add_edge("classify_statement_type", "exact_query")
+
 workflow.add_edge("exact_query", END)
 workflow.add_edge("semantic_retrieval", END)
 
