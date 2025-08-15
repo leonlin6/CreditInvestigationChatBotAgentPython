@@ -180,10 +180,11 @@ def exact_query(state: OverallState) -> OverallState:
     print("\n Answer Data-----------", answerData)
 
     finalPrompt = f"""
-        你是一個專業的信用徵審團隊助手，並根據'參考答案'回答問題
-        若答案為數字，則根據千位加入標點符號，並不要更改其正負號
+        你是一個專業的信用徵審團隊助手，並根據'財務報表資料'回答問題
+        若答案為數字，則根據千位加入標點符號，並不要更改其正負號，並且答案要加入貨幣單位
+        ###貨幣單位：新台幣仟元
         ###問題：{state['user_input']}
-        ###參考答案：{answerData}
+        ###財務報表資料：{answerData}
     """
 
     res = chat_model.invoke(finalPrompt)

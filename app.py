@@ -2,6 +2,7 @@ import os
 import sys
 import asyncio
 import chromadb
+import uvicorn
 
 from typing import List, Dict, Optional
 from fastapi import FastAPI
@@ -9,6 +10,7 @@ from dotenv import load_dotenv
 from src.services.save_document_into_vectordb_service import establish_vector_data
 from pydantic import BaseModel, Field
 from src.mappings.company_stock_code_array import CompanyStockCodeArray
+from fastapi.middleware.cors import CORSMiddleware
 
 # import LangChain lib
 from langchain.retrievers import RePhraseQueryRetriever
@@ -42,6 +44,17 @@ from src.types.langgraph_state_types import OverallState
 load_dotenv()
 
 app = FastAPI()
+origins = [
+    "http://localhost:3000",
+    "http://127.0.0.1:3000",  # Next.js
+]
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,  # 需要帶 cookie/認證時要開
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 client = chromadb.HttpClient(host="localhost", port=8000)
 embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
@@ -207,7 +220,21 @@ async def terminal_chat():
             print("Error:", err, file=sys.stderr)
 
 
+@app.get("/chatbot/{user_input}")
+async def read_chatbot_answer(user_input: str):
+    graph_answer = graph.invoke({"user_input": user_input})
+
+    return {"answer": graph_answer["answer"]}
+
+
 if __name__ == "__main__":
     # Run terminal chat mode
-    asyncio.run(terminal_chat())
+
+    # 建立API SERVER
+    uvicorn.run(app, host="localhost", port=3001)
+
+    # 建立terminal ai chat bot
+    # asyncio.run(terminal_chat())
+
+    # 建立語意化的account title code到vector database
     # asyncio.run(establish_vector_data())
