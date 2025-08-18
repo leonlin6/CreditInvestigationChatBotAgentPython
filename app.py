@@ -5,7 +5,7 @@ import chromadb
 import uvicorn
 
 from typing import List, Dict, Optional
-from fastapi import FastAPI
+from fastapi import FastAPI, APIRouter
 from dotenv import load_dotenv
 from src.services.save_document_into_vectordb_service import establish_vector_data
 from pydantic import BaseModel, Field
@@ -22,28 +22,25 @@ from langchain_core.output_parsers import JsonOutputParser
 from langchain_core.prompts import PromptTemplate
 from langchain.schema.output_parser import StrOutputParser
 
-# import LangGraph lib
-from langgraph.graph import StateGraph, START, END
-from langgraph.graph import MessagesState
-from typing_extensions import TypedDict, NotRequired, Annotated
-
-# import langGraph nodes
-from src.langGraphNodes.rephrase_question import rephrase_question
-from src.langGraphNodes.classify_is_question_in_range import (
-    classify_is_question_in_range,
-)
-from src.langGraphNodes.classify_statement_type import classify_statement_type
-from src.langGraphNodes.exact_query import exact_query
-from src.langGraphNodes.semantic_retrieval import semantic_retrieval
-from src.langGraphNodes.classify_question_type import classify_question_type
-
 # import type
 from src.types.langgraph_state_types import OverallState
+
+# import graph
+from src.agent.graph import graph
+
+from src.api.chatbot import chatbot_router
+
 
 # Load environment variables
 load_dotenv()
 
 app = FastAPI()
+api_router = APIRouter()  # 以api_router作為APIRouter實例，本次重點!
+api_router.include_router(chatbot_router)  # 把router1檔案裡的路由結合進api_router
+
+app.include_router(api_router)  # app實例將api_router的路由結合進去
+
+
 origins = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",  # Next.js
@@ -60,90 +57,13 @@ client = chromadb.HttpClient(host="localhost", port=8000)
 embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
 
 
-def question_type_condition_edge(state: OverallState) -> str:
-    match state["question_type"]:
-        case "語意檢索":
-            return "semantic_retrieval"
-        case "精確查詢":
-            return "classify_statement_type"
-        case _:
-            return "semantic_retrieval"
-
-
-# 若問題超出範圍，則回END
-# 若沒超出範圍，則進入下一個Node：classify_question_type
-def is_question_in_range_edge(state: OverallState) -> str:
-    try:
-        print("is_question_in_range_edge in========", state["is_question_in_range"])
-        match state["is_question_in_range"]:
-            case "True":
-                return "classify_question_type"
-            case "False":
-                return "question_out_of_range"
-            case _:
-                return "END"
-    except (ValueError, TypeError) as e:
-        print(f"發生錯誤: {e}")
-
-
-def question_out_of_range(state: OverallState) -> OverallState:
-    return {
-        **state,
-        "answer": "您的問題已超出我可回覆的範圍(財務報表相關資訊)，請重新提問。",
-    }
-
-
-# 宣告Graph Workflow
-workflow = StateGraph(OverallState)
-# 宣告LangGraph Ndoe
-workflow.add_node(rephrase_question)
-workflow.add_node(classify_is_question_in_range)
-workflow.add_node(classify_question_type)
-workflow.add_node(classify_statement_type)
-workflow.add_node(exact_query)
-workflow.add_node(semantic_retrieval)
-workflow.add_node(question_out_of_range)
-
-# 宣告LangGraph Edge
-workflow.add_edge(START, "rephrase_question")
-workflow.add_edge("rephrase_question", "classify_is_question_in_range")
-workflow.add_conditional_edges(
-    source="classify_is_question_in_range",  # 判定問題是否涵蓋在「財務報表」類型的問題
-    path=is_question_in_range_edge,
-    path_map={  # 路徑映射
-        "classify_question_type": "classify_question_type",
-        "question_out_of_range": "question_out_of_range",
-    },
-)
-workflow.add_edge("question_out_of_range", END)
-
-workflow.add_conditional_edges(
-    source="classify_question_type",  # 判定問題是「語意檢索」or「精確查詢」
-    path=question_type_condition_edge,  # 決定要走哪個路的函式
-    path_map={  # 路徑映射
-        "semantic_retrieval": "semantic_retrieval",
-        "classify_statement_type": "classify_statement_type",
-    },
-)
-workflow.add_edge("classify_statement_type", "exact_query")
-
-workflow.add_edge("exact_query", END)
-workflow.add_edge("semantic_retrieval", END)
-
-# workflow.add_edge("classifyQuestionType", "rephrase_question")
-# workflow.add_edge("rephrase_question", "classify_statement_type")
-# workflow.add_edge("classify_statement_type", "exact_query")
-# workflow.add_edge("exact_query", END)
-
-graph = workflow.compile()
 # 定義撈資料的DB
 db = SQLDatabase.from_uri("sqlite:///FinancialStatements.db")
 
-
 # 建立 VectorStore
-vector_store = Chroma(
-    client=client, collection_name="a-test-collection", embedding_function=embeddings
-)
+# vector_store = Chroma(
+#     client=client, collection_name="a-test-collection", embedding_function=embeddings
+# )
 
 
 class Period(BaseModel):
@@ -220,20 +140,13 @@ async def terminal_chat():
             print("Error:", err, file=sys.stderr)
 
 
-@app.get("/chatbot/{user_input}")
-async def read_chatbot_answer(user_input: str):
-    graph_answer = graph.invoke({"user_input": user_input})
-
-    return {"answer": graph_answer["answer"]}
-
-
 if __name__ == "__main__":
     # Run terminal chat mode
 
     # 建立API SERVER
     uvicorn.run(app, host="localhost", port=3001)
 
-    # 建立terminal ai chat bot
+    # 測試用：建立terminal ai chat bot
     # asyncio.run(terminal_chat())
 
     # 建立語意化的account title code到vector database
