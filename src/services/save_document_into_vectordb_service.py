@@ -4,10 +4,6 @@ import chromadb
 import json
 from typing import List, Dict
 
-# Placeholder imports for PDF loading, text splitting, embeddings, and vector DB
-# In a real implementation, use libraries such as PyPDF2, langchain, chromadb, etc.
-
-
 from langchain_openai import OpenAIEmbeddings
 from langchain_chroma import Chroma
 
@@ -140,14 +136,18 @@ embeddings = OpenAIEmbeddings(model="text-embedding-3-large")
 # 將含有metadata的向量資料，spliitter後，存到vector db中
 async def establish_vector_data():
     vectorStrArray = []
-    pdf_files = get_pdf_files()
+    # pdf_files = get_pdf_files()
 
     # 讀取本地 JSON 檔案（假設檔名為 data.json）
-    with open("./src/services/parsedData.json", "r", encoding="utf-8") as f:
+    with open(
+        "/Users/leonlin/Cursor/BackEnd/CreditInvestigationChatBotAgentPython/src/services/parsedData.json",
+        "r",
+        encoding="utf-8",
+    ) as f:
         data = json.load(f)
         vectorStrArray = [
             Document(
-                f"Balance Sheet中，會計項目「{item['zh_tw']}」對應的 XBRL Concept 為「{item['concept_name']}」，會計代碼為{item['code']}"
+                f"現金流量表中，會計項目「{item['zh_tw']}」對應的 XBRL Concept 為「{item['concept_name']}」，會計代碼為{item['code']}"
             )
             for item in data
         ]

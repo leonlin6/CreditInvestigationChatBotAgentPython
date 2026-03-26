@@ -13,7 +13,7 @@ from src.providers.chat_openAI_provider import chat_model
 # 財務報表類別：資產負債表、綜合損益表、現金流量表、權益變動表、會計師查核報告。
 # Todo：判斷式不要直接用reponse.content的中文來作比對，要增加一個判斷對錯的類型比較好，事先定義好錯誤的類別，用英文
 def classify_statement_type(state: OverallState) -> OverallState:
-    print("stte", state)
+    # print("stte", state)
     question_with_system_prompt = f"""
         使用者會問你一些與財報相關的問題，請根據「使用者問題中提及的關鍵項目」判斷該項目最常出現在哪一種財務報表中。請從以下3種類別中選擇，可能複選。
 

@@ -1,0 +1,20 @@
+{
+  "root_dir": "/Users/leonlin/Desktop/WORK/專案/AI-徵審團隊機器人/XBRL Criteria tifrs-20200630",
+  "file_counts": {
+    "xsd": 80,
+    "label": 18,
+    "presentation": 34,
+    "calculation": 27,
+    "definition": 9
+  },
+  "concept_count": 10351,
+  "family_concept_counts": {
+    "AR": 49,
+    "BSCI": 4958,
+    "ES": 111,
+    "IFRST_2017-03-09": 4604,
+    "NOTES": 670,
+    "SCF": 433,
+    "XBRL_TW_Entry_Points": 114
+  }
+}

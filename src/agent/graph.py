@@ -18,6 +18,9 @@ from src.agent.nodes.question_out_of_range import question_out_of_range
 from src.types.langgraph_state_types import OverallState
 
 
+from langgraph.checkpoint.memory import MemorySaver
+
+
 def question_type_condition_edge(state: OverallState) -> str:
     match state["question_type"]:
         case "語意檢索":
@@ -32,7 +35,7 @@ def question_type_condition_edge(state: OverallState) -> str:
 # 若沒超出範圍，則進入下一個Node：classify_question_type
 def is_question_in_range_edge(state: OverallState) -> str:
     try:
-        print("is_question_in_range_edge in========", state["is_question_in_range"])
+        # print("is_question_in_range_edge in========", state["is_question_in_range"])
         match state["is_question_in_range"]:
             case "True":
                 return "classify_question_type"
@@ -81,5 +84,7 @@ workflow.add_edge("classify_statement_type", "exact_query")
 workflow.add_edge("exact_query", END)
 workflow.add_edge("semantic_retrieval", END)
 
-
+# Add simple in-memory checkpointer
+# memory = MemorySaver()
+# graph = workflow.compile(checkpointer=memory)
 graph = workflow.compile()

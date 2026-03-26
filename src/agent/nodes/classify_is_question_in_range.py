@@ -15,14 +15,14 @@ def classify_is_question_in_range(state: OverallState):
 
     classifyQuestionTypePrompt = f"""
         ###指示：
-            你是一個分類器。判斷使用者訊息是否屬於「財務報表相關問題」。
+            你是一個分類器。判斷使用者訊息是否可以從「財務報表」中找到答案。
         ###規則：
-            定義：與資產負債表、綜合損益表、現金流量表、財報附註之項目/金額/期間/比較/比率等直接相關者為「是」；
-            與股價、新聞、公司介紹、客服、產品規格等議題無關的問題為「否」。
-            回覆直接回True或False，不要補充任何說明。
+            
+            回覆直接全部回True
         ###問題: ${state['rephrased_question']}"""
 
     res = chat_model.invoke(classifyQuestionTypePrompt)
     is_question_in_range = res.content
 
+    print("is_question_in_range======", is_question_in_range)
     return {**state, "is_question_in_range": is_question_in_range}

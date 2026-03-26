@@ -1,0 +1,2576 @@
+[
+  {
+    "concept_name": "ifrs-full_AdditionalPaidinCapital",
+    "en": "Capital surplus, additional paid-in capital",
+    "zh_tw": "資本公積－發行溢價",
+    "code": "3210"
+  },
+  {
+    "concept_name": "ifrs-full_AmountRecognisedInOtherComprehensiveIncomeAndAccumulatedInEquityRelatingToNoncurrentAssetsOrDisposalGroupsHeldForSale",
+    "en": "Equity related to non-current assets or disposal groups classified as held for sale",
+    "zh_tw": "與待出售非流動資產（或處分群組）直接相關之權益",
+    "code": "3450"
+  },
+  {
+    "concept_name": "ifrs-full_Assets",
+    "en": null,
+    "zh_tw": "資產總計",
+    "code": "1XXX"
+  },
+  {
+    "concept_name": "ifrs-full_AssetsAbstract",
+    "en": "Assets",
+    "zh_tw": "資產",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_BasicEarningsLossPerShare",
+    "en": "Basic earnings per share",
+    "zh_tw": "基本每股盈餘",
+    "code": "7000"
+  },
+  {
+    "concept_name": "ifrs-full_BasicEarningsLossPerShareFromContinuingOperations",
+    "en": "Basic earnings (losses) per share from continuing operations",
+    "zh_tw": "繼續營業單位稅後淨利（淨損）",
+    "code": "7010"
+  },
+  {
+    "concept_name": "ifrs-full_BasicEarningsLossPerShareFromDiscontinuedOperations",
+    "en": "Basic earnings (losses) per share from discontinued operations",
+    "zh_tw": "停業單位稅後淨利（淨損）",
+    "code": "7020"
+  },
+  {
+    "concept_name": "ifrs-full_BasicEarningsPerShareAbstract",
+    "en": "Basic earnings per share",
+    "zh_tw": "基本每股盈餘",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_Buildings",
+    "en": "Buildings and structures",
+    "zh_tw": "房屋及建築",
+    "code": "1520"
+  },
+  {
+    "concept_name": "ifrs-full_CapitalReserve",
+    "en": "Capital surplus",
+    "zh_tw": "資本公積",
+    "code": "3200"
+  },
+  {
+    "concept_name": "ifrs-full_CashAndCashEquivalents",
+    "en": null,
+    "zh_tw": null,
+    "code": "1100"
+  },
+  {
+    "concept_name": "ifrs-full_ComprehensiveIncome",
+    "en": "Total comprehensive income",
+    "zh_tw": "本期綜合損益總額",
+    "code": "6700"
+  },
+  {
+    "concept_name": "ifrs-full_ComprehensiveIncomeAttributableToAbstract",
+    "en": "Comprehensive income attributable to",
+    "zh_tw": "綜合損益總額歸屬",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_ComprehensiveIncomeAttributableToNoncontrollingInterests",
+    "en": null,
+    "zh_tw": "非控制股權",
+    "code": "6920"
+  },
+  {
+    "concept_name": "ifrs-full_ComprehensiveIncomeAttributableToOwnersOfParent",
+    "en": null,
+    "zh_tw": "母公司業主",
+    "code": "6910"
+  },
+  {
+    "concept_name": "ifrs-full_ConstructionInProgress",
+    "en": "Construction in process and prepayments for buildings and land",
+    "zh_tw": "未完工程及預付房地設備款",
+    "code": "1590"
+  },
+  {
+    "concept_name": "ifrs-full_CostOfSales",
+    "en": null,
+    "zh_tw": null,
+    "code": "5190"
+  },
+  {
+    "concept_name": "ifrs-full_CurrentAdvances",
+    "en": "Advance receipts",
+    "zh_tw": "預收款項",
+    "code": "2320"
+  },
+  {
+    "concept_name": "ifrs-full_CurrentAssets",
+    "en": null,
+    "zh_tw": null,
+    "code": "11XX"
+  },
+  {
+    "concept_name": "ifrs-full_CurrentAssetsAbstract",
+    "en": "Current assets",
+    "zh_tw": "流動資產",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_CurrentCommercialPapersIssuedAndCurrentPortionOfNoncurrentCommercialPapersIssued",
+    "en": "Short-term notes bills payable",
+    "zh_tw": "應付短期票券",
+    "code": "2120"
+  },
+  {
+    "concept_name": "ifrs-full_CurrentContractAssets",
+    "en": "Current contract assets",
+    "zh_tw": "合約資產－流動",
+    "code": "1195"
+  },
+  {
+    "concept_name": "ifrs-full_CurrentContractLiabilities",
+    "en": "Current contract liabilities",
+    "zh_tw": "合約負債－流動",
+    "code": "2165"
+  },
+  {
+    "concept_name": "ifrs-full_CurrentFinancialAssetsAtAmortisedCost",
+    "en": "Current financial assets at amortised cost",
+    "zh_tw": "按攤銷後成本衡量之金融資產－流動",
+    "code": "1145"
+  },
+  {
+    "concept_name": "ifrs-full_CurrentFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+    "en": "Current financial assets at fair value through other comprehensive income",
+    "zh_tw": "透過其他綜合損益按公允價值衡量之金融資產－流動",
+    "code": "1125"
+  },
+  {
+    "concept_name": "ifrs-full_CurrentFinancialLiabilitiesAtFairValueThroughProfitOrLoss",
+    "en": "Current financial liabilities at fair value through profit or loss",
+    "zh_tw": "透過損益按公允價值衡量之金融負債－流動",
+    "code": "2140"
+  },
+  {
+    "concept_name": "ifrs-full_CurrentLiabilities",
+    "en": null,
+    "zh_tw": null,
+    "code": "21XX"
+  },
+  {
+    "concept_name": "ifrs-full_CurrentLiabilitiesAbstract",
+    "en": "Current liabilities",
+    "zh_tw": "流動負債",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_CurrentPrepayments",
+    "en": "Prepayments",
+    "zh_tw": "預付款項",
+    "code": "1280"
+  },
+  {
+    "concept_name": "ifrs-full_CurrentTaxAssets",
+    "en": null,
+    "zh_tw": "本期所得稅資產",
+    "code": "1260"
+  },
+  {
+    "concept_name": "ifrs-full_CurrentTaxLiabilities",
+    "en": null,
+    "zh_tw": "本期所得稅負債",
+    "code": "2310"
+  },
+  {
+    "concept_name": "ifrs-full_DeferredTaxAssets",
+    "en": "Deferred income tax assets, net",
+    "zh_tw": "遞延所得稅資產淨額",
+    "code": "1800"
+  },
+  {
+    "concept_name": "ifrs-full_DeferredTaxLiabilities",
+    "en": null,
+    "zh_tw": null,
+    "code": "2630"
+  },
+  {
+    "concept_name": "ifrs-full_DepositsFromBanks",
+    "en": "Deposits from the central bank and banks",
+    "zh_tw": "央行及銀行同業存款",
+    "code": "2190"
+  },
+  {
+    "concept_name": "ifrs-full_DepositsFromCustomers",
+    "en": "Deposits and remittances",
+    "zh_tw": "存款及匯款",
+    "code": "2360"
+  },
+  {
+    "concept_name": "ifrs-full_DilutedEarningsLossPerShare",
+    "en": "Diluted earnings per share",
+    "zh_tw": "稀釋每股盈餘",
+    "code": "7100"
+  },
+  {
+    "concept_name": "ifrs-full_DilutedEarningsLossPerShareFromContinuingOperations",
+    "en": "Diluted earnings (losses) per share from continuing operations",
+    "zh_tw": "繼續營業單位稅後淨利（淨損）",
+    "code": "7110"
+  },
+  {
+    "concept_name": "ifrs-full_DilutedEarningsLossPerShareFromDiscontinuedOperations",
+    "en": "Diluted earnings (losses) per share from discontinued operations",
+    "zh_tw": "停業單位稅後淨利（淨損）",
+    "code": "7120"
+  },
+  {
+    "concept_name": "ifrs-full_DilutedEarningsPerShareAbstract",
+    "en": "Diluted earnings per share",
+    "zh_tw": "稀釋每股盈餘",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_Equity",
+    "en": null,
+    "zh_tw": "權益總計",
+    "code": "3XXX"
+  },
+  {
+    "concept_name": "ifrs-full_EquityAbstract",
+    "en": "Equity",
+    "zh_tw": "權益",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_EquityAndLiabilities",
+    "en": "Total liabilities and equity",
+    "zh_tw": "負債及權益總計",
+    "code": "3X2X"
+  },
+  {
+    "concept_name": "ifrs-full_EquityAndLiabilitiesAbstract",
+    "en": "Liabilities and equities",
+    "zh_tw": "負債及權益",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_EquityAttributableToOwnersOfParent",
+    "en": null,
+    "zh_tw": null,
+    "code": "31XX"
+  },
+  {
+    "concept_name": "ifrs-full_FinancialAssetsAtFairValueThroughProfitOrLoss",
+    "en": "Current financial assets at fair value through profit or loss",
+    "zh_tw": "透過損益按公允價值衡量之金融資產－流動",
+    "code": "1120"
+  },
+  {
+    "concept_name": "ifrs-full_FinancialLiabilitiesAtAmortisedCost",
+    "en": "Current financial liabilities at amortised cost",
+    "zh_tw": "按攤銷後成本衡量之金融負債－流動",
+    "code": "2155"
+  },
+  {
+    "concept_name": "ifrs-full_GainsArisingFromDerecognitionOfFinancialAssetsMeasuredAtAmortisedCost",
+    "en": "Gains arising from derecognition of financial assets measured at amortised cost",
+    "zh_tw": "除列按攤銷後成本衡量之金融資產利益",
+    "code": "4115"
+  },
+  {
+    "concept_name": "ifrs-full_GainsOnDisposalsOfInvestments",
+    "en": "Gains on disposals of investments",
+    "zh_tw": "處分投資利益",
+    "code": "4200"
+  },
+  {
+    "concept_name": "ifrs-full_GainsOnDisposalsOfPropertyPlantAndEquipment",
+    "en": "Gain on disposal of property, plan and equipment",
+    "zh_tw": "處分不動產、廠房及設備利益",
+    "code": "4210"
+  },
+  {
+    "concept_name": "ifrs-full_GeneralAndAdministrativeExpense",
+    "en": "General and administrative expenses",
+    "zh_tw": "管理及總務費用",
+    "code": "5232"
+  },
+  {
+    "concept_name": "ifrs-full_Goodwill",
+    "en": null,
+    "zh_tw": null,
+    "code": "1710"
+  },
+  {
+    "concept_name": "ifrs-full_HedgingInstrumentAssets",
+    "en": "Current financial assets for hedging",
+    "zh_tw": "避險之金融資產－流動",
+    "code": "1150"
+  },
+  {
+    "concept_name": "ifrs-full_HedgingInstrumentLiabilities",
+    "en": "Current financial liabilities for hedging",
+    "zh_tw": "避險之金融負債－流動",
+    "code": "2150"
+  },
+  {
+    "concept_name": "ifrs-full_ImpairmentLossRecognisedInProfitOrLoss",
+    "en": "Impairment losses",
+    "zh_tw": "減損損失",
+    "code": "5280"
+  },
+  {
+    "concept_name": "ifrs-full_IncomeTaxExpenseContinuingOperations",
+    "en": null,
+    "zh_tw": null,
+    "code": "6200"
+  },
+  {
+    "concept_name": "ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss",
+    "en": "Income tax related to components of other comprehensive income that will be reclassified to profit or loss",
+    "zh_tw": "與可能重分類之項目相關之所得稅",
+    "code": "6689"
+  },
+  {
+    "concept_name": "ifrs-full_IncomeTaxRelatingToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+    "en": "Income tax related to components of other comprehensive income that will not be reclassified to profit or loss",
+    "zh_tw": "與不重分類之項目相關之所得稅",
+    "code": "6649"
+  },
+  {
+    "concept_name": "ifrs-full_IntangibleAssetsAndGoodwill",
+    "en": "Intangible assets, net",
+    "zh_tw": "無形資產淨額",
+    "code": "1700"
+  },
+  {
+    "concept_name": "ifrs-full_IntangibleAssetsUnderDevelopment",
+    "en": null,
+    "zh_tw": null,
+    "code": "1730"
+  },
+  {
+    "concept_name": "ifrs-full_InterestExpense",
+    "en": null,
+    "zh_tw": null,
+    "code": "5010"
+  },
+  {
+    "concept_name": "ifrs-full_Inventories",
+    "en": null,
+    "zh_tw": null,
+    "code": "1270"
+  },
+  {
+    "concept_name": "ifrs-full_InvestmentAccountedForUsingEquityMethod",
+    "en": null,
+    "zh_tw": null,
+    "code": "1470"
+  },
+  {
+    "concept_name": "ifrs-full_InvestmentProperty",
+    "en": "Investment property, net",
+    "zh_tw": "投資性不動產淨額",
+    "code": "1600"
+  },
+  {
+    "concept_name": "ifrs-full_IssuedCapital",
+    "en": "Share Capital",
+    "zh_tw": "股本",
+    "code": "3100"
+  },
+  {
+    "concept_name": "ifrs-full_Land",
+    "en": null,
+    "zh_tw": null,
+    "code": "1510"
+  },
+  {
+    "concept_name": "ifrs-full_Liabilities",
+    "en": null,
+    "zh_tw": "負債總計",
+    "code": "2XXX"
+  },
+  {
+    "concept_name": "ifrs-full_LiabilitiesAbstract",
+    "en": "Liabilities",
+    "zh_tw": "負債",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_LiabilitiesIncludedInDisposalGroupsClassifiedAsHeldForSale",
+    "en": "Liabilities related to non-current assets or disposal groups classified as held for sale",
+    "zh_tw": "與待出售非流動資產（或處分群組）直接相關之負債",
+    "code": "2340"
+  },
+  {
+    "concept_name": "ifrs-full_LongtermBorrowings",
+    "en": null,
+    "zh_tw": null,
+    "code": "2550"
+  },
+  {
+    "concept_name": "ifrs-full_LossesArisingFromDerecognitionOfFinancialAssetsMeasuredAtAmortisedCost",
+    "en": "Losses arising from derecognition of financial assets measured at amortised cost",
+    "zh_tw": "除列按攤銷後成本衡量之金融資產損失",
+    "code": "5135"
+  },
+  {
+    "concept_name": "ifrs-full_LossesOnDisposalsOfInvestments",
+    "en": "Loss on sale of investments",
+    "zh_tw": "處分投資損失",
+    "code": "5240"
+  },
+  {
+    "concept_name": "ifrs-full_LossesOnDisposalsOfPropertyPlantAndEquipment",
+    "en": "Loss on disposal of property, plant and equipment",
+    "zh_tw": "處分不動產、廠房及設備損失",
+    "code": "5250"
+  },
+  {
+    "concept_name": "ifrs-full_Machinery",
+    "en": "Computer and machinery equipment",
+    "zh_tw": "電腦及機器設備",
+    "code": "1530"
+  },
+  {
+    "concept_name": "ifrs-full_MergerReserve",
+    "en": "Capital surplus, net assets from merger",
+    "zh_tw": "資本公積－合併溢額",
+    "code": "3280"
+  },
+  {
+    "concept_name": "ifrs-full_MotorVehicles",
+    "en": "Transportation and communication equipment",
+    "zh_tw": "交通及運輸設備",
+    "code": "1540"
+  },
+  {
+    "concept_name": "ifrs-full_NoncontrollingInterests",
+    "en": null,
+    "zh_tw": null,
+    "code": "32XX"
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentAssets",
+    "en": null,
+    "zh_tw": null,
+    "code": "14XX"
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentAssetsAbstract",
+    "en": "Non-current assets",
+    "zh_tw": "非流動資產",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSale",
+    "en": "Non-current assets or disposal groups classified as held for sale, net",
+    "zh_tw": "待出售非流動資產(或處分群組)淨額",
+    "code": "1290"
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentAssetsOrDisposalGroupsClassifiedAsHeldForSaleOrAsHeldForDistributionToOwners",
+    "en": "Non-current assets or disposal groups classified as held for distribution to owners, net",
+    "zh_tw": "待分配予業主之非流動資產(或處分群組)淨額",
+    "code": "1300"
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentBiologicalAssets",
+    "en": "Biological assets, net",
+    "zh_tw": "生物資產淨額",
+    "code": "1750"
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentContractAssets",
+    "en": "Non-current contract assets",
+    "zh_tw": "合約資產－非流動",
+    "code": "1465"
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentContractLiabilities",
+    "en": "Non-current contract liabilities",
+    "zh_tw": "合約負債－非流動",
+    "code": "2535"
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentFinancialAssetsAtAmortisedCost",
+    "en": "Non-current financial assets at amortised cost",
+    "zh_tw": "按攤銷後成本衡量之金融資產－非流動",
+    "code": "1435"
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+    "en": "Non-current financial assets at fair value through other comprehensive income",
+    "zh_tw": "透過其他綜合損益按公允價值衡量之金融資產－非流動",
+    "code": "1415"
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLoss",
+    "en": "Non-current financial assets at fair value through profit or loss",
+    "zh_tw": "透過損益按公允價值衡量之金融資產－非流動",
+    "code": "1410"
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentFinancialLiabilitiesAtAmortisedCost",
+    "en": "Non-current financial liabilities at amortised cost",
+    "zh_tw": "按攤銷後成本衡量之金融負債－非流動",
+    "code": "2525"
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentFinancialLiabilitiesAtFairValueThroughProfitOrLoss",
+    "en": "Non-current financial liabilities at fair value through profit or loss",
+    "zh_tw": "透過損益按公允價值衡量之金融負債－非流動",
+    "code": "2510"
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentLiabilities",
+    "en": null,
+    "zh_tw": null,
+    "code": "25XX"
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentLiabilitiesAbstract",
+    "en": "Non-current liabilities",
+    "zh_tw": "非流動負債",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_NoncurrentPortionOfNoncurrentBondsIssued",
+    "en": "Bonds payable",
+    "zh_tw": "應付債券",
+    "code": "2540"
+  },
+  {
+    "concept_name": "ifrs-full_OtherAssets",
+    "en": "Other assets",
+    "zh_tw": "其他資產",
+    "code": "1900"
+  },
+  {
+    "concept_name": "ifrs-full_OtherComprehensiveIncome",
+    "en": null,
+    "zh_tw": null,
+    "code": "6600"
+  },
+  {
+    "concept_name": "ifrs-full_OtherComprehensiveIncomeAbstract",
+    "en": "Other comprehensive income",
+    "zh_tw": "其他綜合損益",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_OtherComprehensiveIncomeBeforeTaxChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiability",
+    "en": "Change in fair value of financial liability attributable to change in credit risk of liability",
+    "zh_tw": "指定按公允價值衡量之金融負債信用風險變動影響數",
+    "code": "6621"
+  },
+  {
+    "concept_name": "ifrs-full_OtherComprehensiveIncomeBeforeTaxExchangeDifferencesOnTranslation",
+    "en": "Exchange differences on translation",
+    "zh_tw": "國外營運機構財務報表換算之兌換差額",
+    "code": "6651"
+  },
+  {
+    "concept_name": "ifrs-full_OtherComprehensiveIncomeBeforeTaxGainsLossesFromInvestmentsInEquityInstruments",
+    "en": "Revaluation gains (losses) on investments in equity instruments measured at fair value through other comprehensive income",
+    "zh_tw": "透過其他綜合損益按公允價值衡量之權益工具評價利益（損失）",
+    "code": "6617"
+  },
+  {
+    "concept_name": "ifrs-full_OtherComprehensiveIncomeBeforeTaxGainsLossesOnRemeasurementsOfDefinedBenefitPlans",
+    "en": "Gains (losses) on remeasurements of defined benefit plans",
+    "zh_tw": "確定福利計畫之再衡量數",
+    "code": "6611"
+  },
+  {
+    "concept_name": "ifrs-full_OtherComprehensiveIncomeBeforeTaxGainsLossesOnRevaluation",
+    "en": "Gains (losses) on revaluation",
+    "zh_tw": "不動產重估增值",
+    "code": "6615"
+  },
+  {
+    "concept_name": "ifrs-full_OtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossNetOfTax",
+    "en": "Components of other comprehensive income that will be reclassified to profit or loss",
+    "zh_tw": "後續可能重分類至損益之項目",
+    "code": "6650"
+  },
+  {
+    "concept_name": "ifrs-full_OtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossNetOfTax",
+    "en": "Components of other comprehensive income that will not be reclassified to profit or loss",
+    "zh_tw": "不重分類至損益之項目",
+    "code": "6610"
+  },
+  {
+    "concept_name": "ifrs-full_OtherCurrentAssets",
+    "en": "Other current assets",
+    "zh_tw": "其他流動資產",
+    "code": "1320"
+  },
+  {
+    "concept_name": "ifrs-full_OtherCurrentFinancialAssets",
+    "en": null,
+    "zh_tw": "其他金融資產－流動",
+    "code": "1190"
+  },
+  {
+    "concept_name": "ifrs-full_OtherCurrentFinancialLiabilities",
+    "en": null,
+    "zh_tw": "其他金融負債－流動",
+    "code": "2180"
+  },
+  {
+    "concept_name": "ifrs-full_OtherCurrentLiabilities",
+    "en": "Other current liabilities",
+    "zh_tw": "其他流動負債",
+    "code": "2350"
+  },
+  {
+    "concept_name": "ifrs-full_OtherCurrentPayables",
+    "en": "Other payables",
+    "zh_tw": "其他應付款",
+    "code": "2204"
+  },
+  {
+    "concept_name": "ifrs-full_OtherEquityInterest",
+    "en": null,
+    "zh_tw": null,
+    "code": "3400"
+  },
+  {
+    "concept_name": "ifrs-full_OtherIncome",
+    "en": null,
+    "zh_tw": "其他收入",
+    "code": "4270"
+  },
+  {
+    "concept_name": "ifrs-full_OtherIntangibleAssets",
+    "en": null,
+    "zh_tw": null,
+    "code": "1720"
+  },
+  {
+    "concept_name": "ifrs-full_OtherLiabilities",
+    "en": "Other liabilities",
+    "zh_tw": "其他負債",
+    "code": "2660"
+  },
+  {
+    "concept_name": "ifrs-full_OtherNoncurrentFinancialAssets",
+    "en": null,
+    "zh_tw": "其他金融資產－非流動",
+    "code": "1480"
+  },
+  {
+    "concept_name": "ifrs-full_OtherNoncurrentFinancialLiabilities",
+    "en": null,
+    "zh_tw": "其他金融負債－非流動",
+    "code": "2580"
+  },
+  {
+    "concept_name": "ifrs-full_OtherProvisions",
+    "en": null,
+    "zh_tw": "其他準備",
+    "code": "2604"
+  },
+  {
+    "concept_name": "ifrs-full_OtherProvisionsAbstract",
+    "en": "Other provisions",
+    "zh_tw": "其他準備",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_ProfitLoss",
+    "en": null,
+    "zh_tw": "本期淨利（淨損）",
+    "code": "6500"
+  },
+  {
+    "concept_name": "ifrs-full_ProfitLossAttributableToAbstract",
+    "en": "Profit (loss), attributable to",
+    "zh_tw": "淨利（淨損）歸屬",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_ProfitLossAttributableToNoncontrollingInterests",
+    "en": null,
+    "zh_tw": "非控制股權",
+    "code": "6820"
+  },
+  {
+    "concept_name": "ifrs-full_ProfitLossAttributableToOwnersOfParent",
+    "en": null,
+    "zh_tw": "母公司業主",
+    "code": "6810"
+  },
+  {
+    "concept_name": "ifrs-full_ProfitLossBeforeTax",
+    "en": "Profit (loss) from continuing operations before income tax",
+    "zh_tw": "繼續營業單位稅前淨利（淨損）",
+    "code": "6100"
+  },
+  {
+    "concept_name": "ifrs-full_ProfitLossFromContinuingOperations",
+    "en": "Profit (loss) from continuing operations, net of tax",
+    "zh_tw": "繼續營業單位本期淨利（淨損）",
+    "code": "6300"
+  },
+  {
+    "concept_name": "ifrs-full_ProfitLossFromDiscontinuedOperations",
+    "en": null,
+    "zh_tw": "停業單位損益",
+    "code": "6400"
+  },
+  {
+    "concept_name": "ifrs-full_PropertyPlantAndEquipment",
+    "en": "Property, plant and equipment, net",
+    "zh_tw": "不動產、廠房及設備淨額",
+    "code": "1500"
+  },
+  {
+    "concept_name": "ifrs-full_ProvisionForDecommissioningRestorationAndRehabilitationCosts",
+    "en": null,
+    "zh_tw": null,
+    "code": "2606"
+  },
+  {
+    "concept_name": "ifrs-full_Provisions",
+    "en": null,
+    "zh_tw": null,
+    "code": "2600"
+  },
+  {
+    "concept_name": "ifrs-full_ProvisionsAbstract",
+    "en": "Provisions",
+    "zh_tw": "負債準備",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_ProvisionsForEmployeeBenefits",
+    "en": null,
+    "zh_tw": null,
+    "code": "2602"
+  },
+  {
+    "concept_name": "ifrs-full_ReinsuranceAssets",
+    "en": "Reinsurance assets, net",
+    "zh_tw": "再保險合約資產淨額",
+    "code": "1310"
+  },
+  {
+    "concept_name": "ifrs-full_RentalIncome",
+    "en": "Rental revenue",
+    "zh_tw": "租賃收入",
+    "code": "4170"
+  },
+  {
+    "concept_name": "ifrs-full_ResearchAndDevelopmentExpense",
+    "en": "Research development expense",
+    "zh_tw": "研究發展費用",
+    "code": "5233"
+  },
+  {
+    "concept_name": "ifrs-full_ReserveOfChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiability",
+    "en": "Change in fair value of financial liability attributable to change in credit risk of liability",
+    "zh_tw": "指定按公允價值衡量之金融負債信用風險變動影響數",
+    "code": "3445"
+  },
+  {
+    "concept_name": "ifrs-full_ReserveOfExchangeDifferencesOnTranslation",
+    "en": "Exchange differences on translation of foreign financial statements",
+    "zh_tw": "國外營運機構財務報表換算之兌換差額",
+    "code": "3410"
+  },
+  {
+    "concept_name": "ifrs-full_ReserveOfGainsAndLossesOnFinancialAssetsMeasuredAtFairValueThroughOtherComprehensiveIncome",
+    "en": "Unrealised gains (losses) on financial assets measured at fair value through other comprehensive income",
+    "zh_tw": "透過其他綜合損益按公允價值衡量之金融資產未實現評價利益（損失）",
+    "code": "3425"
+  },
+  {
+    "concept_name": "ifrs-full_ReserveOfOverlayApproach",
+    "en": "Reserve of overlay approach",
+    "zh_tw": "採用覆蓋法重分類之其他綜合損益",
+    "code": "3480"
+  },
+  {
+    "concept_name": "ifrs-full_RetainedEarnings",
+    "en": null,
+    "zh_tw": null,
+    "code": "3300"
+  },
+  {
+    "concept_name": "ifrs-full_RevaluationSurplus",
+    "en": "Revaluation surplus",
+    "zh_tw": "不動產重估增值",
+    "code": "3460"
+  },
+  {
+    "concept_name": "ifrs-full_Revenue",
+    "en": "Revenues",
+    "zh_tw": null,
+    "code": "4XXX"
+  },
+  {
+    "concept_name": "ifrs-full_RevenueAbstract",
+    "en": "Revenues",
+    "zh_tw": "收入",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_RevenueFromConstructionContracts",
+    "en": "Construction and engineering revenue",
+    "zh_tw": "營建工程收入",
+    "code": "4190"
+  },
+  {
+    "concept_name": "ifrs-full_RevenueFromInterest",
+    "en": "Interest income",
+    "zh_tw": null,
+    "code": "4010"
+  },
+  {
+    "concept_name": "ifrs-full_RevenueFromRenderingOfServices",
+    "en": "Service revenue",
+    "zh_tw": null,
+    "code": "4180"
+  },
+  {
+    "concept_name": "ifrs-full_RevenueFromSaleOfGoods",
+    "en": "Net sales",
+    "zh_tw": "銷貨收入淨額",
+    "code": "4160"
+  },
+  {
+    "concept_name": "ifrs-full_ReversalOfImpairmentLossRecognisedInProfitOrLoss",
+    "en": "Reversal of impairment loss on assets",
+    "zh_tw": "減損迴轉利益",
+    "code": "4250"
+  },
+  {
+    "concept_name": "ifrs-full_RightofuseAssets",
+    "en": "Right-of-use assets, net",
+    "zh_tw": "使用權資產淨額",
+    "code": "1595"
+  },
+  {
+    "concept_name": "ifrs-full_SellingExpense",
+    "en": "Selling expenses",
+    "zh_tw": "推銷費用",
+    "code": "5231"
+  },
+  {
+    "concept_name": "ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillBeReclassifiedToProfitOrLossBeforeTax",
+    "en": "Share of other comprehensive income of associates and joint ventures accounted for using equity method, components of other comprehensive income that will be reclassified to profit or loss",
+    "zh_tw": "採用權益法認列之關聯企業及合資其他綜合損益之份額－可能重分類至損益之項目",
+    "code": "6665"
+  },
+  {
+    "concept_name": "ifrs-full_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodThatWillNotBeReclassifiedToProfitOrLossBeforeTax",
+    "en": "Share of other comprehensive income of associates and joint ventures accounted for using equity method, components of other comprehensive income that will not be reclassified to profit or loss",
+    "zh_tw": "採用權益法認列之關聯企業及合資其他綜合損益之份額－不重分類至損益之項目",
+    "code": "6625"
+  },
+  {
+    "concept_name": "ifrs-full_ShorttermBorrowings",
+    "en": null,
+    "zh_tw": null,
+    "code": "2110"
+  },
+  {
+    "concept_name": "ifrs-full_StatementOfComprehensiveIncomeAbstract",
+    "en": "Statement of comprehensive income",
+    "zh_tw": "綜合損益表",
+    "code": null
+  },
+  {
+    "concept_name": "ifrs-full_StatutoryReserve",
+    "en": "Legal reserve",
+    "zh_tw": "法定盈餘公積",
+    "code": "3310"
+  },
+  {
+    "concept_name": "ifrs-full_TradeAndOtherCurrentPayablesToRelatedParties",
+    "en": "Payables to related parties",
+    "zh_tw": "應付款項－關係人",
+    "code": "2210"
+  },
+  {
+    "concept_name": "ifrs-full_TradeAndOtherCurrentPayablesToTradeSuppliers",
+    "en": "Accounts payable",
+    "zh_tw": "應付帳款",
+    "code": "2202"
+  },
+  {
+    "concept_name": "ifrs-full_TradeAndOtherCurrentReceivablesDueFromRelatedParties",
+    "en": "Receivables due from related parties",
+    "zh_tw": "應收款項－關係人",
+    "code": "1210"
+  },
+  {
+    "concept_name": "ifrs-full_TradeAndOtherPayables",
+    "en": "Payables",
+    "zh_tw": "應付款項",
+    "code": "2200"
+  },
+  {
+    "concept_name": "ifrs-full_TreasuryShares",
+    "en": null,
+    "zh_tw": "庫藏股票",
+    "code": "3500"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_AccountsPayable",
+    "en": "Accounts payable",
+    "zh_tw": "應付帳款",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_AccountsReceivable",
+    "en": "Accounts receivable",
+    "zh_tw": "應收帳款",
+    "code": "1202"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_AccruedExpenses",
+    "en": "Accrued expenses",
+    "zh_tw": "應付費用",
+    "code": "2203"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_AccumulatedImpairmentEquityInvestmentHeldForSale",
+    "en": "Accumulated impairment, equity investment held for sale",
+    "zh_tw": "累計減損－待處分股權投資",
+    "code": "1292"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_AccumulatedImpairmentNoncurrentAssetsClassifiedAsHeldForDistributionToOwners",
+    "en": "Accumulated impairment, non-current assets or disposal groups classified as held for distribution to owners",
+    "zh_tw": "累計減損－待分配予業主之非流動資產(或處分群組)",
+    "code": "1302"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_AccumulatedImpairmentOtherAssetsClassifiedAsHeldForSale",
+    "en": "Accumulated impairment, other assets or disposal groups classified as held for sale",
+    "zh_tw": "累計減損－其他待出售資產(或處分群組)",
+    "code": "1294"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_AccumulatedProfitAndLoss",
+    "en": "Accumulated profit and loss",
+    "zh_tw": "累積盈虧",
+    "code": "3331"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_AcquisitionExpense",
+    "en": "Acquisition expense",
+    "zh_tw": "承保費用",
+    "code": "5030"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_AdvanceReceipts",
+    "en": "Advance receipts",
+    "zh_tw": "預收款項",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_AdvanceReceiptsForOrdinaryShare",
+    "en": "Advance receipts for ordinary share",
+    "zh_tw": "預收股本",
+    "code": "3140"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_AssetsOnInsuranceProductSeparatedAccount",
+    "en": "Assets on insurance product, separated account",
+    "zh_tw": "分離帳戶保險商品資產",
+    "code": "1940"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_BadDebtExpensesAndGuaranteeLiabilityProvisions",
+    "en": "Bad debts expense, commitment and guarantee liability provision",
+    "zh_tw": "呆帳費用、承諾及保證責任準備提存",
+    "code": "5090"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_BalanceSheetAbstract",
+    "en": "Balance Sheet",
+    "zh_tw": "資產負債表",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_BearerBiologicalAssets",
+    "en": "Bearer biological assets",
+    "zh_tw": "生產性生物資產",
+    "code": "1770"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_BearerPlants",
+    "en": "Bearer plants",
+    "zh_tw": "生產性植物",
+    "code": "1585"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_BiologicalAssetsNet",
+    "en": "Biological assets, net",
+    "zh_tw": "生物資產淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_BiologicalAssetsNetAbstract",
+    "en": "Biological assets, net",
+    "zh_tw": "生物資產淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_BondsPayable",
+    "en": "Bonds payable",
+    "zh_tw": "應付債券",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_Capital",
+    "en": "Share Capital",
+    "zh_tw": "股本",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalAbstract",
+    "en": "Share Capital",
+    "zh_tw": "股本",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplus",
+    "en": "Capital surplus",
+    "zh_tw": "資本公積",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusAbstract",
+    "en": "Capital surplus",
+    "zh_tw": "資本公積",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusAcquisitionOrDisposal",
+    "en": "Capital surplus, difference between consideration and carrying amount of subsidiaries acquired or disposed",
+    "zh_tw": "資本公積－實際取得或處分子公司股權價格與帳面價值差額",
+    "code": "3230"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusAdditionalPaid-InCapitalArisingFromBondConversion",
+    "en": "Capital surplus, additional paid-in capital arising from bond conversion",
+    "zh_tw": "資本公積－轉換公司債轉換溢價",
+    "code": "3213"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusAdditionalPaid-InCapitalArisingFromPreferenceShare",
+    "en": "Capital surplus, additional paid-in capital arising from preference share",
+    "zh_tw": "資本公積－特別股股票溢價",
+    "code": "3212"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusAdditionalPaidInCapital",
+    "en": "Capital surplus, additional paid-in capital",
+    "zh_tw": "資本公積－發行溢價",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusAdditionalPaidInCapitalAbstract",
+    "en": "Capital surplus, additional paid-in capital",
+    "zh_tw": "資本公積－發行溢價",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusAdditionalPaidInCapitalArisingFromOrdinaryShare",
+    "en": "Capital surplus, additional paid-in capital arising from ordinary share",
+    "zh_tw": "資本公積－普通股股票溢價",
+    "code": "3211"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusChangesInEquityOfAssociatesAndJointVenturesAccountedForUsingEquityMethod",
+    "en": "Capital surplus, changes in equity of associates and joint ventures accounted for using equity method",
+    "zh_tw": "資本公積－採用權益法認列之關聯企業及合資淨值之變動數",
+    "code": "3270"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusChangesInOwnershipInterestsInSubsidiaries",
+    "en": "Capital Surplus, changes in ownership interests in subsidiaries",
+    "zh_tw": "資本公積－認列對子公司所有權權益變動數",
+    "code": "3235"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusDonatedAssetsReceived",
+    "en": "Capital surplus, donated assets received",
+    "zh_tw": "資本公積－受贈資產",
+    "code": "3250"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusDonatedAssetsReceivedAbstract",
+    "en": "Capital surplus, donated assets received",
+    "zh_tw": "資本公積－受贈資產",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusDonatedAssetsReceivedFromShareholder",
+    "en": "Capital surplus, donated assets received from shareholder",
+    "zh_tw": "資本公積－受領股東贈與",
+    "code": "3251"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusEmployeeShareOptions",
+    "en": "Capital surplus, employee share options",
+    "zh_tw": "資本公積－員工認股權",
+    "code": "3260"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusGainOnDisposalsOfPropertyPlanAndEquipment",
+    "en": "Capital surplus, gain on disposals of property, plan and equipment",
+    "zh_tw": "資本公積－處分資產增益",
+    "code": "3240"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusNetAssetsFromMerger",
+    "en": "Capital surplus, net assets from merger",
+    "zh_tw": "資本公積－合併溢額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusOtherDonatedAssetsReceived",
+    "en": "Capital surplus, other donated assets received",
+    "zh_tw": "資本公積－其他受贈資產",
+    "code": "3252"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusOthers",
+    "en": "Capital surplus, others",
+    "zh_tw": "資本公積－其他",
+    "code": "3295"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusRestrictedStock",
+    "en": "Capital Surplus, restricted stock",
+    "zh_tw": "資本公積－限制員工權利股票",
+    "code": "3293"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusSecurityTokenOffer",
+    "en": "Capital Surplus, Security Token Offer",
+    "zh_tw": "資本公積－買回具證券性質之虛擬通貨",
+    "code": "3225"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusShareOptions",
+    "en": "Capital surplus, share options",
+    "zh_tw": "資本公積－認股權",
+    "code": "3290"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CapitalSurplusTreasuryShareTransactions",
+    "en": "Capital surplus, treasury share transactions",
+    "zh_tw": "資本公積－庫藏股票交易",
+    "code": "3220"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CertificateOfEntitlementToNewSharesFromConvertibleBond",
+    "en": "Certificate of entitlement to new shares from convertible bond",
+    "zh_tw": "債券換股權利證書",
+    "code": "3130"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiability",
+    "en": "Change in fair value of financial liability attributable to change in credit risk of liability",
+    "zh_tw": "指定按公允價值衡量之金融負債信用風險變動影響數",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ChangeInFairValueOfFinancialLiabilityAttributableToChangeInCreditRiskOfLiabilityForIS",
+    "en": "Change in fair value of financial liability attributable to change in credit risk of liability",
+    "zh_tw": "指定按公允價值衡量之金融負債信用風險變動影響數",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ClaimsPayable",
+    "en": "Claims payable",
+    "zh_tw": "應付保險賠款與給付",
+    "code": "2270"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ClaimsRecoveredFromReinsurers",
+    "en": "Claims recovered from reinsurers",
+    "zh_tw": "攤回再保賠款與給付",
+    "code": "4030"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CommissionExpense",
+    "en": "Commission expense",
+    "zh_tw": "佣金費用",
+    "code": "5040"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CommissionsPayable",
+    "en": "Commissions payable",
+    "zh_tw": "應付佣金",
+    "code": "2250"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss",
+    "en": "Components of other comprehensive income that will be reclassified to profit or loss",
+    "zh_tw": "後續可能重分類至損益之項目",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLossAbstract",
+    "en": "Components of other comprehensive income that will be reclassified to profit or loss",
+    "zh_tw": "後續可能重分類至損益之項目",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+    "en": "Components of other comprehensive income that will not be reclassified to profit or loss",
+    "zh_tw": "不重分類至損益之項目",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLossAbstract",
+    "en": "Components of other comprehensive income that will not be reclassified to profit or loss",
+    "zh_tw": "不重分類至損益之項目",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ComprehensiveIncomeAttributableToFormerOwnerOfBusinessCombinationUnderCommonControl",
+    "en": "Comprehensive income, attributable to former owner of business combination under common control",
+    "zh_tw": "共同控制下前手權益",
+    "code": "6915"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ComprehensiveIncomeAttributableToNoncontrollingInterestsBeforeBusinessCombinationUnderCommonControl",
+    "en": "Comprehensive income attributable to non-controlling interests before business combination under common control",
+    "zh_tw": "合併前非屬共同控制股權綜合損益淨額",
+    "code": "6699"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ConstructionAndEngineeringRevenue",
+    "en": "Construction and engineering revenue",
+    "zh_tw": "營建工程收入",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ConstructionContractsPayable",
+    "en": "Construction contracts payable",
+    "zh_tw": "應付建造合約款",
+    "code": "2220"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ConstructionContractsPayableToRelatedParties",
+    "en": "Construction contracts payable to related parties",
+    "zh_tw": "應付建造合約款－關係人",
+    "code": "2230"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ConstructionContractsReceivable",
+    "en": "Construction contracts receivable",
+    "zh_tw": "應收建造合約款",
+    "code": "1220"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ConstructionContractsReceivableDueFromRelatedParties",
+    "en": "Construction contracts receivable due from related parties",
+    "zh_tw": "應收建造合約款－關係人",
+    "code": "1230"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ConstructionInProcessAndPrepaymentsForBuildingsAndLand",
+    "en": "Construction in process and prepayments for buildings and land",
+    "zh_tw": "未完工程及預付房地設備款",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ConsumableBiologicalAssets",
+    "en": "Consumable biological assets",
+    "zh_tw": "消耗性生物資產",
+    "code": "1760"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CostOfEngineeringSales",
+    "en": "Cost of engineering sales",
+    "zh_tw": "工程成本",
+    "code": "5220"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CostOfRentalSales",
+    "en": "Cost of rental sales",
+    "zh_tw": "租賃成本",
+    "code": "5200"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CostOfServices",
+    "en": "Cost of services",
+    "zh_tw": "勞務成本",
+    "code": "5210"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CurrentDerivativeFinancialAssetsForHedging",
+    "en": "Current financial assets for hedging",
+    "zh_tw": "避險之金融資產／避險之衍生金融資產－流動",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CurrentDerivativeFinancialLiabilitiesForHedging",
+    "en": "Current financial liabilities for hedging",
+    "zh_tw": "避險之金融負債／避險之衍生金融負債－流動",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CurrentFinancialAssetsAtFairValueThroughProfitOrLoss",
+    "en": "Current financial assets at fair value through profit or loss",
+    "zh_tw": "透過損益按公允價值衡量之金融資產－流動",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CurrentFinancialLiabilitiesAtFairValueThroughProfitOrLoss",
+    "en": "Current financial liabilities at fair value through profit or loss",
+    "zh_tw": "透過損益按公允價值衡量之金融負債－流動",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CurrentLeaseLiabilities",
+    "en": "Current lease liabilities",
+    "zh_tw": "租賃負債－流動",
+    "code": "2335"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CurrentPreferenceShareLiabilities",
+    "en": "Current preference share liabilities",
+    "zh_tw": "特別股負債－流動",
+    "code": "2170"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CurrentProfitAndLoss",
+    "en": "Current profit and loss",
+    "zh_tw": "本期損益",
+    "code": "3333"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CurrentTaxAssetsAbstract",
+    "en": "Current tax assets",
+    "zh_tw": "當期所得稅資產",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CurrentTaxLiabilitiesNonCurrent",
+    "en": "Current tax liabilities,non-current",
+    "zh_tw": "本期所得稅負債-非流動",
+    "code": "2645"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_CustomerMarginAccount",
+    "en": "Customer margin account",
+    "zh_tw": "客戶保證金專戶",
+    "code": "1250"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DeferredIncomeTaxAssetsNet",
+    "en": "Deferred income tax assets, net",
+    "zh_tw": "遞延所得稅資產淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DeferredTaxLiabilitiesAbstract",
+    "en": "Deferred tax liabilities",
+    "zh_tw": "遞延所得稅負債",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DeferredTaxLiabilitiesLand",
+    "en": "Deferred tax liabilities, land",
+    "zh_tw": "遞延所得稅負債－所得稅",
+    "code": "2631"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DeferredTaxLiabilitiesLandValueIncrementTax",
+    "en": "Deferred tax liabilities, land value increment tax",
+    "zh_tw": "遞延所得稅負債－土地增值稅",
+    "code": "2632"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DeferredTaxLiabilitiesOther",
+    "en": "Deferred tax liabilities, other",
+    "zh_tw": "遞延所得稅負債－其他",
+    "code": "2639"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DepositsAndRemittances",
+    "en": "Deposits and remittances",
+    "zh_tw": "存款及匯款",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DepositsFromTheCentralBankAndBanks",
+    "en": "Deposits from the central bank and banks",
+    "zh_tw": "央行及銀行同業存款",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DepositsReceivedFromSecuritiesBorrowers",
+    "en": "Deposits received from securities borrowers",
+    "zh_tw": "融券存入保證價款",
+    "code": "2240"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DerivativeNoncurrentFinancialLiabilitiesForHedging",
+    "en": "Non-current financial liabilities for hedging",
+    "zh_tw": "避險之金融負債－非流動",
+    "code": "2520"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DisbursementsOnInsuranceProductSeparatedAccount",
+    "en": "Disbursements on insurance product, separated account",
+    "zh_tw": "分離帳戶保險商品費用",
+    "code": "5100"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DiscountsAndLoansNet",
+    "en": "Discounts and loans, net",
+    "zh_tw": "貼現及放款淨額",
+    "code": "1330"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DividendsOnPreferredStockLiabilities",
+    "en": "Dividends on preferred stock liabilities",
+    "zh_tw": "負債性特別股股息",
+    "code": "5300"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DueFromTheCentralBankAndCallLoansToBanks",
+    "en": "Due from the central bank and call loans to banks",
+    "zh_tw": "存放央行及拆借銀行同業",
+    "code": "1110"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DueToReinsurersAndCedingCompanies",
+    "en": "Due to reinsurers and ceding companies",
+    "zh_tw": "應付再保往來款項",
+    "code": "2260"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_DueToTheCentralBankAndOtherBanks",
+    "en": "Due to the central bank and other banks",
+    "zh_tw": "央行及銀行同業融資",
+    "code": "2370"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_EquitiesAbstract",
+    "en": "Equities",
+    "zh_tw": "權益",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_EquitiesAttributableToOwnersOfParentAbstract",
+    "en": "Equities attributable to owners of parent",
+    "zh_tw": "歸屬於母公司業主之權益",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_EquityAttributableToFomerOwnerOfBusinessCombinationUnderCommonControl",
+    "en": "Equity attributable to former owner of business combination under common control",
+    "zh_tw": "共同控制下前手權益",
+    "code": "35XX"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_EquityAttributableToNoncontrollingInterestBeforeBusinessCombinationUnderCommonControl",
+    "en": "Equity attributable to non-controlling interest before business combination under common control",
+    "zh_tw": "合併前非屬共同控制股權",
+    "code": "355X"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_EquityInvestmentHeldForSale",
+    "en": "Equity investment held for sale",
+    "zh_tw": "待處分股權投資",
+    "code": "1291"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_EquityRelatedToNon-currentAssetsOrDisposalGroupsClassifiedAsHeldForDistributionToOwners",
+    "en": "Equity related to non-current assets or disposal groups classified as held for distribution to owners",
+    "zh_tw": "與待分配予業主之非流動資產（或處分群組）直接相關之權益",
+    "code": "3455"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_EquityRelatedToNoncurrentAssetsClassifiedAsHeldForSale",
+    "en": "Equity related to non-current assets or disposal groups classified as held for sale",
+    "zh_tw": "與待出售非流動資產（或處分群組）直接相關之權益",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_EquitySecurityTokenOffer",
+    "en": "Equity-Security Token Offer",
+    "zh_tw": "權益－具證券性質之虛擬通貨",
+    "code": "3199"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_EquitySecurityTokenOfferAbstract",
+    "en": "Equity-Security Token Offer",
+    "zh_tw": "權益－具證券性質之虛擬通貨",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_EquivalentIssueSharesOfAdvanceReceiptsForOrdinaryShareUnitShare",
+    "en": "Equivalent issue shares of advance receipts for ordinary share (unit: share)",
+    "zh_tw": "預收股款（權益項下）之約當發行股數（單位：股）",
+    "code": "3998"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ExchangeDifferencesOnTranslationOfForeignFinancialStatements-OtherEquityInterest",
+    "en": "Exchange differences on translation of foreign financial statements",
+    "zh_tw": "國外營運機構財務報表換算之兌換差額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ExchangeDifferencesOnTranslationOfForeignFinancialStatements-UnappropriatedRetainedEarningsAccumulatedDeficit",
+    "en": "Exchange differences on translation of foreign financial statements",
+    "zh_tw": "追溯適用及追溯重編之影響數",
+    "code": "3332"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ExpectedCreditLosses",
+    "en": "Expected credit losses",
+    "zh_tw": "預期信用減損損失",
+    "code": "5285"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ExpectedCreditLossesOfInvestments",
+    "en": "Expected credit losses of investments",
+    "zh_tw": "投資之預期信用減損損失",
+    "code": "5286"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ExpectedCreditLossesOfNoninvestments",
+    "en": "Expected credit losses of non-investments",
+    "zh_tw": "非投資之預期信用減損損失",
+    "code": "5287"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_Expenses",
+    "en": "Expenses",
+    "zh_tw": "支出",
+    "code": "5XXX"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ExpensesAbstract",
+    "en": "Expenses",
+    "zh_tw": "支出",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_FeeExpense",
+    "en": "Fee expense",
+    "zh_tw": "手續費用",
+    "code": "5060"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_FeeIncome",
+    "en": "Fee income",
+    "zh_tw": "手續費收入",
+    "code": "4050"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_FinanceLeaseReceievable",
+    "en": "Finance lease receievable",
+    "zh_tw": "應收融資租賃款",
+    "code": "1206"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ForeclosedCollateralsNet",
+    "en": "Foreclosed collaterals, net",
+    "zh_tw": "承受擔保品－淨額",
+    "code": "1990"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ForeignExchangeGains",
+    "en": "Foreign exchange gains",
+    "zh_tw": "兌換利益",
+    "code": "4260"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ForeignExchangeLosses",
+    "en": "Foreign exchange losses",
+    "zh_tw": "兌換損失",
+    "code": "5290"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_Funds",
+    "en": "Funds",
+    "zh_tw": "基金",
+    "code": "1950"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_FutureCommissionExpense",
+    "en": "Future commission expense",
+    "zh_tw": "期貨佣金支出",
+    "code": "5180"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_FutureCommissionRevenue",
+    "en": "Future commission revenue",
+    "zh_tw": "期貨佣金收入",
+    "code": "4080"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_FuturesTradersEquity",
+    "en": "Futures traders' equity",
+    "zh_tw": "期貨交易人權益",
+    "code": "2300"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainLossOnDisposalOfAssetsOrDisposalGroupsConstitutingDiscontinuedOperationNetOfTax",
+    "en": "Gain (loss) on disposal of assets or disposal groups constituting discontinued operation, net of tax",
+    "zh_tw": "停業單位資產或處分群組處分損益（稅後）",
+    "code": "6420"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainLossOnReclassificationUnderTheOverlayApproach",
+    "en": "Gains on reclassification under the overlay approach",
+    "zh_tw": "採用覆蓋法重分類之利益",
+    "code": "4245"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainLossRecognisedOnMeasurementToFairValueLessCostsToSellOfAssetsOrDisposalGroupsConstitutingDiscontinuedOperationNetOfTax",
+    "en": "Gain (loss) recognised on measurement to fair value less costs to sell of assets or disposal groups constituting discontinued operation, net of tax",
+    "zh_tw": "停業單位資產或處分群組按公允價值減出售成本衡量損益（稅後）",
+    "code": "6430"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainOnDisposalOfPropertyPlanAndEquipment",
+    "en": "Gain on disposal of property, plan and equipment",
+    "zh_tw": "處分不動產、廠房及設備利益",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainsLossesFromInvestmentsInDebtInstrumentsMeasuredAtFairValueThroughOtherComprehensiveIncome",
+    "en": "Gains (losses) from investments in debt instruments measured at fair value through other comprehensive income",
+    "zh_tw": "透過其他綜合損益按公允價值衡量之債務工具利益（損失）",
+    "code": "6659"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainsLossesOnHedgingInstrumentThatWillBeReclassifiedToProfitOrLoss",
+    "en": "Gains (losses) on hedging instrument that will be reclassified to profit or loss",
+    "zh_tw": "避險工具之利益（損失）",
+    "code": "6661"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainsLossesOnHedgingInstrumentThatWillNotBeReclassifiedToProfitOrLoss",
+    "en": "Gains (losses) on hedging instrument that will not be reclassified to profit or loss",
+    "zh_tw": "避險工具之利益（損失）",
+    "code": "6619"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainsLossesOnHedgingInstruments",
+    "en": "Gains (losses) on hedging instruments",
+    "zh_tw": "避險工具之利益（損失）",
+    "code": "3435"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainsLossesOnRemeasurementsOfDefinedBenefit",
+    "en": "Gains (losses) on remeasurements of defined benefit",
+    "zh_tw": "確定福利計畫之再衡量數",
+    "code": "3470"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainsLossesOnRevaluation",
+    "en": "Gains (losses) on revaluation",
+    "zh_tw": "不動產重估增值",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainsOnDisposalsOfInvestments",
+    "en": "Gains on disposals of investments",
+    "zh_tw": "處分投資利益",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainsOnFinancialAssetsOrLiabilitiesAtFairValueThroughProfitOrLoss",
+    "en": "Gains on financial assets or liabilities at fair value through profit or loss",
+    "zh_tw": "透過損益按公允價值衡量之金融資產及負債利益",
+    "code": "4090"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainsOnHedgingInstrumentFairValueHedges",
+    "en": "Gains on hedging instrument",
+    "zh_tw": "避險工具之利益",
+    "code": "4140"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainsOnInvestmentProperty",
+    "en": "Gains on investment property",
+    "zh_tw": "投資性不動產利益",
+    "code": "4230"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainsOnReclassificationOfFinancialAssets",
+    "en": "Gains on reclassification of financial assets",
+    "zh_tw": "金融資產重分類利益",
+    "code": "4125"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GainsOnSaleOfForeclosedCollaterals",
+    "en": "Gains on sale of foreclosed collaterals",
+    "zh_tw": "出售承受擔保品利益",
+    "code": "4300"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GeneralAndAdministrativeExpenses",
+    "en": "General and administrative expenses",
+    "zh_tw": "管理及總務費用",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GuaranteeDepositsPaid",
+    "en": "Guarantee deposits paid",
+    "zh_tw": "存出保證金",
+    "code": "1920"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GuaranteeDepositsReceived",
+    "en": "Guarantee deposits received",
+    "zh_tw": "存入保證金",
+    "code": "2620"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_GuaranteedPriceDepositsReceivedFromSecuritiesBorrowers",
+    "en": "Guaranteed price deposits received from securities borrowers",
+    "zh_tw": "應付融券擔保價款",
+    "code": "2290"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_IncomeAaxRelatedToComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+    "en": "Income tax related to components of other comprehensive income that will not be reclassified to profit or loss",
+    "zh_tw": "與不重分類之項目相關之所得稅",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_IncomeOnInsuranceProductSeparatedAccount",
+    "en": "Income on insurance product, separated account",
+    "zh_tw": "分離帳戶保險商品收益",
+    "code": "4070"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_IncomeTaxRefundReceivable",
+    "en": "Income tax refund receivable",
+    "zh_tw": "應收所得稅退稅款",
+    "code": "1261"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_IncomeTaxRelatedToComponentsOfOtherComprehensiveIncome",
+    "en": "Income tax related to components of other comprehensive income",
+    "zh_tw": "與其他綜合損益組成部分相關之所得稅",
+    "code": "6695"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_IncomeTaxRelatedToComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss",
+    "en": "Income tax related to components of other comprehensive income that will be reclassified to profit or loss",
+    "zh_tw": "與可能重分類之項目相關之所得稅",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_InsuranceClaimsPayments",
+    "en": "Insurance claims payments",
+    "zh_tw": "保險賠款與給付",
+    "code": "5050"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_InsuranceExpense",
+    "en": "Insurance expense",
+    "zh_tw": "保險費用",
+    "code": "5020"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_IntangibleAssetsNet",
+    "en": "Intangible assets, net",
+    "zh_tw": "無形資產淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_IntangibleAssetsNetAbstract",
+    "en": "Intangible assets, net",
+    "zh_tw": "無形資產淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_InvestmentPropertyBuildings",
+    "en": "Investment property, buildings",
+    "zh_tw": "投資性不動產－建築物",
+    "code": "1620"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_InvestmentPropertyLand",
+    "en": "Investment property, land",
+    "zh_tw": "投資性不動產－土地",
+    "code": "1610"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_InvestmentPropertyLeasehold",
+    "en": "Investment property, leasehold",
+    "zh_tw": "投資性不動產－租賃權益",
+    "code": "1630"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_InvestmentPropertyNetAbstract",
+    "en": "Investment property, net",
+    "zh_tw": "投資性不動產淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_InvestmentPropertyRightOfUseAssets",
+    "en": "Investment property, right-of-use assets",
+    "zh_tw": "投資性不動產－使用權資產",
+    "code": "1635"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_InvestmentPropertyUnderConstruction",
+    "en": "Investment property under construction",
+    "zh_tw": "建造中之投資性不動產",
+    "code": "1640"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LeasedAssetsImprovements",
+    "en": "Leased assets improvements",
+    "zh_tw": "租賃資產改良",
+    "code": "1560"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LegalReserve",
+    "en": "Legal reserve",
+    "zh_tw": "法定盈餘公積",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LiabilitiesOnInsuranceProductSeparatedAccount",
+    "en": "Liabilities on insurance product, separated account",
+    "zh_tw": "分離帳戶保險商品負債",
+    "code": "2610"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LiabilitiesRelatedToNon-currentAssetsOrDisposalGroupsClassifiedAsHeldForDistributionToOwners",
+    "en": "Liabilities related to non-current assets or disposal groups classified as held for distribution to owners",
+    "zh_tw": "與待分配予業主之非流動資產(或處分群組)直接相關之負債",
+    "code": "2345"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LongtermAccountsPayable",
+    "en": "Long-term accounts payable",
+    "zh_tw": "長期應付款項",
+    "code": "2560"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LongtermAccountsReceivables",
+    "en": "Long-term accounts receivables",
+    "zh_tw": "長期應收款項",
+    "code": "1930"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LongtermLiabilitiesCurrentPortion",
+    "en": "Long-term liabilities, current portion",
+    "zh_tw": "應付到期長期負債（一年或一營業週期內到期長期負債）",
+    "code": "2330"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LossOnDisposalOfPropertyPlantAndEquipment",
+    "en": "Loss on disposal of property, plant and equipment",
+    "zh_tw": "處分不動產、廠房及設備損失",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LossOnInvestmentProperty",
+    "en": "Loss on investment property",
+    "zh_tw": "投資性不動產費用及損失",
+    "code": "5270"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LossOnSaleOfInvestments",
+    "en": "Loss on sale of investments",
+    "zh_tw": "處分投資損失",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LossesArisingFromDerecognitionOfFinancialAssetsMeasuredAtAmortisedCost",
+    "en": "Losses arising from derecognition of financial assets measured at amortised cost",
+    "zh_tw": "金融資產重分類損失",
+    "code": "5145"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LossesOnFinancialAssetsOrLiabilitiesAtFairValueThroughProfitOrLoss",
+    "en": "Losses on financial assets or liabilities at fair value through profit or loss",
+    "zh_tw": "透過損益按公允價值衡量之金融資產及負債損失",
+    "code": "5110"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LossesOnHedgingInstrumentFairValueHedges",
+    "en": "Losses on hedging instrument",
+    "zh_tw": "避險工具之損失",
+    "code": "5160"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LossesOnReclassificationUnderOverlayApproach",
+    "en": "Losses on reclassification under overlay approach",
+    "zh_tw": "採用覆蓋法重分類之損失",
+    "code": "5275"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_LossesOnSaleOfForeclosedCollaterals",
+    "en": "Losses on sale of foreclosed collaterals",
+    "zh_tw": "出售承受擔保品損失",
+    "code": "5310"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_MarginLoansReceivable",
+    "en": "Margin loans receivable",
+    "zh_tw": "應收證券融資款",
+    "code": "1240"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_MiscellaneousEquipments",
+    "en": "Miscellaneous equipments",
+    "zh_tw": "什項設備",
+    "code": "1550"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NetChangeInInsuranceLiability",
+    "en": "Net change in other insurance liability",
+    "zh_tw": "其他保險負債淨變動",
+    "code": "5070"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NetChangeInReserveForForeignExchangeValuation",
+    "en": "Net change in reserve for foreign exchange valuation",
+    "zh_tw": "外匯價格變動準備淨變動",
+    "code": "4240"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NetGainsLossesOnFinancialLiabilitiesAtAmortisedCost",
+    "en": "Net gains (losses) on financial liabilities at amortised cost",
+    "zh_tw": "按攤銷後成本衡量之金融負債淨利益(損失)",
+    "code": "4118"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NetSalesAbstract",
+    "en": "Net sales",
+    "zh_tw": "銷貨收入淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NonCurrentLeaseLiabilities",
+    "en": "Non-current lease liabilities",
+    "zh_tw": "租賃負債－非流動",
+    "code": "2625"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NoncurrentAssetsClassifiedAsHeldForDistributionToOwners",
+    "en": "Non-current assets or disposal groups classified as held for distribution to owners",
+    "zh_tw": "待分配予業主之非流動資產(或處分群組)",
+    "code": "1301"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NoncurrentAssetsClassifiedAsHeldForDistributionToOwnersNet",
+    "en": "Non-current assets or disposal groups classified as held for distribution to owners, net",
+    "zh_tw": "待分配予業主之非流動資產(或處分群組)淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NoncurrentAssetsClassifiedAsHeldForDistributionToOwnersNetAbstract",
+    "en": "Non-current assets or disposal groups classified as held for distribution to owners, net",
+    "zh_tw": "待分配予業主之非流動資產(或處分群組)淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NoncurrentAssetsClassifiedAsHeldForSaleNet",
+    "en": "Non-current assets or disposal groups classified as held for sale, net",
+    "zh_tw": "待出售非流動資產(或處分群組)淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NoncurrentAssetsClassifiedAsHeldForSaleNetAbstract",
+    "en": "Non-current assets or disposal groups classified as held for sale, net",
+    "zh_tw": "待出售非流動資產(或處分群組)淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NoncurrentDerivativeFinancialAssetsForHedgingNet",
+    "en": "Non-current financial assets for hedging",
+    "zh_tw": "避險之金融資產－非流動",
+    "code": "1440"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NoncurrentFinancialAssetsAtFairValueThroughProfitOrLossNet",
+    "en": "Non-current financial assets at fair value through profit or loss",
+    "zh_tw": "透過損益按公允價值衡量之金融資產－非流動",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NoncurrentFinancialLiabilitiesAtFairValueThroughProfitOrLoss",
+    "en": "Non-current financial liabilities at fair value through profit or loss",
+    "zh_tw": "透過損益按公允價值衡量之金融負債－非流動",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NoncurrentPreferenceShareLiabilities",
+    "en": "Non-current preference share liabilities",
+    "zh_tw": "特別股負債－非流動",
+    "code": "2570"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NotesAndBondsIssuedUnderRepurchaseAgreement",
+    "en": "Notes and bonds issued under repurchase agreement",
+    "zh_tw": "附買回票券及債券負債",
+    "code": "2130"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NotesPayable",
+    "en": "Notes payable",
+    "zh_tw": "應付票據",
+    "code": "2201"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NotesReceivable",
+    "en": "Notes receivable",
+    "zh_tw": "應收票據",
+    "code": "1201"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NumberOfShareCapitalAwaitingRetirement",
+    "en": "Number of share capital awaiting retirement",
+    "zh_tw": "待註銷股本股數",
+    "code": "3997"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_NumberOfSharesInEntityHeldByEntityAndByItsSubsidiariesUnitShare",
+    "en": "Number of shares in entity held by entity and by its subsidiaries (unit: share)",
+    "zh_tw": "母公司暨子公司所持有之母公司庫藏股股數（單位：股）",
+    "code": "3999"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OperatingExpenses",
+    "en": "Operating expenses",
+    "zh_tw": "營業費用",
+    "code": "5230"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OperatingExpensesAbstract",
+    "en": "Operating expenses",
+    "zh_tw": "營業費用",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OperatingLeaseReceivable",
+    "en": "Operating lease receivable",
+    "zh_tw": "應收營業租賃款",
+    "code": "1205"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OperationGuaranteeDepositsAndSettlementFund",
+    "en": "Operation guarantee deposits and settlement fund",
+    "zh_tw": "營業保證金及交割結算基金",
+    "code": "1910"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OrdinaryShare",
+    "en": "Ordinary share",
+    "zh_tw": "普通股股本",
+    "code": "3110"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherAssets",
+    "en": "Other assets",
+    "zh_tw": "其他資產",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherAssetsAbstract",
+    "en": "Other assets",
+    "zh_tw": "其他資產",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherAssetsClassifiedAsHeldForSale",
+    "en": "Other assets or disposal groups classified as held for sale",
+    "zh_tw": "其他待出售資產(或處分群組)",
+    "code": "1293"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherAssetsOthers",
+    "en": "Other assets - others",
+    "zh_tw": "其他資產－其他",
+    "code": "1970"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss",
+    "en": "Other components of other comprehensive income that will be reclassified to profit or loss",
+    "zh_tw": "可能重分類至損益之其他項目",
+    "code": "6685"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherComponentsOfOtherComprehensiveIncomeThatWillNotBeReclassifiedToProfitOrLoss",
+    "en": "Other components of other comprehensive income that will not be reclassified to profit or loss",
+    "zh_tw": "不重分類至損益之其他項目",
+    "code": "6645"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherComprehensiveIncomeBeforeTaxActuarialGainsLossesOnDefinedBenefitPlans1",
+    "en": "Gains (losses) on remeasurements of defined benefit plans",
+    "zh_tw": "確定福利計畫之再衡量數",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherComprehensiveIncomeOnReclassificationUnderTheOverlayApproach",
+    "en": "Other comprehensive income on reclassification under the overlay approach",
+    "zh_tw": "採用覆蓋法重分類之其他綜合損益",
+    "code": "6675"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherComprehensiveIncomeOthers",
+    "en": "Other comprehensive income, others",
+    "zh_tw": "其他綜合損益－其他",
+    "code": "6690"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherCurrentAssets",
+    "en": "Other current assets",
+    "zh_tw": "其他流動資產",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherCurrentLiabilities",
+    "en": "Other current liabilities",
+    "zh_tw": "其他流動負債",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherEquityInterestAbstract",
+    "en": "Other equity interest",
+    "zh_tw": "其他權益",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherEquityOthers",
+    "en": "Other equity, others",
+    "zh_tw": "其他權益－其他",
+    "code": "3490"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherEquityOthers-OtherEquityOthers",
+    "en": "Other equity, others",
+    "zh_tw": "其他權益－其他",
+    "code": "3499"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherEquityOthersAbstract",
+    "en": "Other equity, others",
+    "zh_tw": "其他權益－其他",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherEquityUnearnedCompensation",
+    "en": "Other equity, unearned compensation",
+    "zh_tw": "其他權益－員工未賺得酬勞",
+    "code": "3491"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherExpectedCreditLosses",
+    "en": "Other expected credit losses",
+    "zh_tw": "其他預期信用減損損失",
+    "code": "5288"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherExpenses",
+    "en": "Other expenses",
+    "zh_tw": "其他支出",
+    "code": "5320"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherFacilities",
+    "en": "Other facilities",
+    "zh_tw": "其他設備",
+    "code": "1580"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherLiabilitiesOther",
+    "en": "Other liabilities",
+    "zh_tw": "其他負債",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherLongtermInvestments",
+    "en": "Other long-term investments",
+    "zh_tw": "其他長期投資",
+    "code": "1960"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherLongtermLiabilities",
+    "en": "Other long-term liabilities",
+    "zh_tw": "其他長期負債",
+    "code": "2590"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherPayables",
+    "en": "Other payables",
+    "zh_tw": "其他應付款",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherProvisionsOthers",
+    "en": "Other provisions, others",
+    "zh_tw": "其他準備－其他",
+    "code": "2607"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherReceivables",
+    "en": "Other receivables",
+    "zh_tw": "其他應收款",
+    "code": "1203"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_OtherTaxRefundReceivable",
+    "en": "Other tax refund receivable",
+    "zh_tw": "應收其他退稅款",
+    "code": "1204"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_Payables",
+    "en": "Payables",
+    "zh_tw": "應付款項",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_PayablesAbstract",
+    "en": "Payables",
+    "zh_tw": "應付款項",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_PayablesToRelatedParties",
+    "en": "Payables to related parties",
+    "zh_tw": "應付款項－關係人",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_PreferenceShare",
+    "en": "Preference share",
+    "zh_tw": "特別股股本",
+    "code": "3120"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_PremiumsRevenue",
+    "en": "Premiums revenue",
+    "zh_tw": "保費收入",
+    "code": "4020"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_PrepaidIncomeTax",
+    "en": "Prepaid income tax",
+    "zh_tw": "預付所得稅稅款",
+    "code": "1262"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_Prepayments",
+    "en": "Prepayments",
+    "zh_tw": "預付款項",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ProfitLossAttributableToFormerOwnerOfBusinessCombinationUnderCommonControl",
+    "en": "Profit (loss), attributable to former owner of business combination under common control",
+    "zh_tw": "共同控制下前手權益",
+    "code": "6815"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ProfitLossAttributableToNoncontrollingInterestsBeforeBusinessCombinationUnderCommonControl",
+    "en": "Profit (loss) attributable to non-controlling interests before business combination under common control",
+    "zh_tw": "合併前非屬共同控制股權損益",
+    "code": "6490"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ProfitLossFromContinuingOperationsBeforeIncomeTax",
+    "en": "Profit (loss) from continuing operations before income tax",
+    "zh_tw": "繼續營業單位稅前淨利（淨損）",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ProfitLossFromContinuingOperationsNetOfTax",
+    "en": "Profit (loss) from continuing operations, net of tax",
+    "zh_tw": "繼續營業單位本期淨利（淨損）",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ProfitLossFromDiscontinuedOperationsAbstract",
+    "en": "Profit (loss) from discontinued operations",
+    "zh_tw": "停業單位損益",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ProfitLossFromDiscontinuedOperationsNetOfTax",
+    "en": "Profit (loss) from discontinued operations, net of tax",
+    "zh_tw": "停業單位稅後損益",
+    "code": "6410"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_PropertyPlantAndEquipmentNetAbstract",
+    "en": "Property, plant and equipment, net",
+    "zh_tw": "不動產、廠房及設備淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ProvisionsForEndorsementLiabilities",
+    "en": "Provisions for endorsement liabilities",
+    "zh_tw": "背書責任準備",
+    "code": "2605"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ProvisionsForGuaranteeLiabilities",
+    "en": "Provisions for guarantee liabilities",
+    "zh_tw": "保證責任準備",
+    "code": "2603"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ProvisionsForInsurance",
+    "en": "Provisions for insurance",
+    "zh_tw": "保險業各項準備",
+    "code": "2601"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ProvisionsForLoanCommitments",
+    "en": "Provisions for loan commitments",
+    "zh_tw": "融資承諾準備",
+    "code": "2608"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_RealizedGainProfitLossFromSales",
+    "en": "Realized gain profit (loss) from sales",
+    "zh_tw": "已實現銷貨損益",
+    "code": "4290"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_RealizedGainsOnFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+    "en": "Realized gains on financial assets at fair value through other comprehensive income",
+    "zh_tw": "透過其他綜合損益按公允價值衡量之金融資產已實現利益",
+    "code": "4105"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_RealizedLossesOnFinancialAssetsAtFairValueThroughOtherComprehensiveIncome",
+    "en": "Realized losses on financial assets at fair value through other comprehensive income",
+    "zh_tw": "透過其他綜合損益按公允價值衡量之金融資產已實現損失",
+    "code": "5125"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ReceivablesDueFromRelatedParties",
+    "en": "Receivables due from related parties",
+    "zh_tw": "應收款項－關係人",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ReceivablesNet",
+    "en": "Receivables, net",
+    "zh_tw": "應收款項淨額",
+    "code": "1200"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ReceivablesNetAbstract",
+    "en": "Receivables, net",
+    "zh_tw": "應收款項淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ReinsuranceAssetsNet",
+    "en": "Reinsurance assets, net",
+    "zh_tw": "再保險合約資產淨額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ReinsuranceCommissionReceived",
+    "en": "Reinsurance commission received",
+    "zh_tw": "再保佣金收入",
+    "code": "4040"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ReinsuranceIndemnityPayable",
+    "en": "Reinsurance indemnity payable",
+    "zh_tw": "應付再保賠款與給付",
+    "code": "2280"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_RentalAssets",
+    "en": "Rental assets",
+    "zh_tw": "出租資產",
+    "code": "1570"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_RentalRevenue",
+    "en": "Rental revenue",
+    "zh_tw": "租賃收入",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ResearchDevelopmentExpense",
+    "en": "Research development expense",
+    "zh_tw": "研究發展費用",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_RetainedEarningsAbstract",
+    "en": "Retained earnings",
+    "zh_tw": "保留盈餘",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_RevaluationSurplus",
+    "en": "Revaluation surplus",
+    "zh_tw": "不動產重估增值",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ReversalOfExpectedCreditLosses",
+    "en": "Reversal of expected credit losses",
+    "zh_tw": "預期信用減損迴轉利益",
+    "code": "4255"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ReversalOfExpectedCreditLossesOfInvestments",
+    "en": "Reversal of expected credit losses of investments",
+    "zh_tw": "投資之預期信用減損迴轉利益",
+    "code": "4256"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ReversalOfExpectedCreditLossesOfNoninvestments",
+    "en": "Reversal of expected credit losses of non-investments",
+    "zh_tw": "非投資之預期信用減損迴轉利益",
+    "code": "4257"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ReversalOfImpairmentLossOnAssets",
+    "en": "Reversal of impairment loss on assets",
+    "zh_tw": "減損迴轉利益",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ReversalOfOtherExpectedCreditLosses",
+    "en": "Reversal of other expected credit losses",
+    "zh_tw": "其他預期信用減損迴轉利益",
+    "code": "4258"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_Sales",
+    "en": "Sales",
+    "zh_tw": "銷貨收入",
+    "code": "4161"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_SalesDiscountsAndAllowances",
+    "en": "Sales discounts and allowances",
+    "zh_tw": "銷貨折讓",
+    "code": "4163"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_SalesReturns",
+    "en": "Sales returns",
+    "zh_tw": "銷貨退回",
+    "code": "4162"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_SecuritiesPurchasedUnderResellAgreements",
+    "en": "Securities purchased under resell agreements",
+    "zh_tw": "附賣回票券及債券投資",
+    "code": "1180"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_SellingExpenses",
+    "en": "Selling expenses",
+    "zh_tw": "推銷費用",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ShareCapitalAwaitingRetirement",
+    "en": "Share capital awaiting retirement",
+    "zh_tw": "待註銷股本",
+    "code": "3160"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ShareOfLossOfAssociatesAndJointVenturesAccountedForUsingEquityMethod",
+    "en": "Share of loss of associates and joint ventures accounted for using equity method",
+    "zh_tw": "採用權益法認列之關聯企業及合資損失之份額",
+    "code": "5080"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ShareOfOtherComprehensiveIncomeOfAssociatesAndJointVenturesAccountedForUsingEquityMethodComponentsOfOtherComprehensiveIncomeThatWillBeReclassifiedToProfitOrLoss",
+    "en": "Share of other comprehensive income of associates and joint ventures accounted for using equity method, components of other comprehensive income that will be reclassified to profit or loss",
+    "zh_tw": "採用權益法認列之關聯企業及合資其他綜合損益之份額－可能重分類至損益之項目",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ShareOfProfitOfAssociatesAndJointVenturesAccountedForUsingEquityMethod",
+    "en": "Share of profit of associates and joint ventures accounted for using equity method",
+    "zh_tw": "採用權益法認列之關聯企業及合資利益之份額",
+    "code": "4060"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ShorttermNotesBillsPayable",
+    "en": "Short-term notes bills payable",
+    "zh_tw": "應付短期票券",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_SpecialReserve",
+    "en": "Special reserve",
+    "zh_tw": "特別盈餘公積",
+    "code": "3320"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_StockDividendToBeDistributedReserveForCapitalization",
+    "en": "Stock dividend to be distributed, reserve for capitalization",
+    "zh_tw": "待分配股票股利（增資準備）",
+    "code": "3150"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_TotalComprehensiveIncome",
+    "en": "Total comprehensive income",
+    "zh_tw": "本期綜合損益總額",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_UnappropriatedRetainedEarningsAccumulatedDeficit",
+    "en": "Unappropriated retained earnings (accumulated deficit)",
+    "zh_tw": "未分配盈餘（待彌補虧損）",
+    "code": "3330"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_UnappropriatedRetainedEarningsAccumulatedDeficitAbstract",
+    "en": "Unappropriated retained earnings (accumulated deficit)",
+    "zh_tw": "未分配盈餘（待彌補虧損）",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_UnrealizedGainsLossesOnAvailableForSaleFinancialAssets",
+    "en": "Unrealized gains (losses) on available-for-sale financial assets",
+    "zh_tw": "備供出售金融資產未實現利益（損失）",
+    "code": null
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_UnrealizedProfitLossFromSales",
+    "en": "Unrealized profit (loss) from sales",
+    "zh_tw": "未實現銷貨損益",
+    "code": "4280"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ValuationGainsOnSecuritiesHeldForCustomerDefault",
+    "en": "Valuation gains on securities held for customer default",
+    "zh_tw": "違約證券評價利益",
+    "code": "4220"
+  },
+  {
+    "concept_name": "tifrs-bsci-mim_ValuationLossesOnSecuritiesHeldForCustomerDefault",
+    "en": "Valuation losses on securities held for customer default",
+    "zh_tw": "違約證券評價損失",
+    "code": "5260"
+  }
+]

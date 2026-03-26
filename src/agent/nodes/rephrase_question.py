@@ -1,7 +1,5 @@
 import os
 
-from langchain_openai import OpenAIEmbeddings, ChatOpenAI
-from langchain_core.prompts import PromptTemplate
 from src.mappings.company_stock_code_array import CompanyStockCodeArray
 from src.types.langgraph_state_types import OverallState
 from src.providers.chat_openAI_provider import chat_model
@@ -23,7 +21,8 @@ def rephrase_question(state: OverallState) -> OverallState:
         ### 改寫後的問題："""
 
     response = chat_model.invoke(custom_prompt)
-    print("rephrased_question response======", response)
+
+    # print("rephrased_question response======", response)
 
     rephrased_question = response.content
     print("rephrased_question======", rephrased_question)
